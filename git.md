@@ -361,3 +361,4 @@ relevant commit.
     # List files that were modified between TAG2 and TAG1
     git diff --name-status TAG2 TAG1
     git diff --name-status TAG2 TAG1 | wc -l      # count modified files
+
