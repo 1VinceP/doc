@@ -362,3 +362,11 @@ relevant commit.
     git diff --name-status TAG2 TAG1
     git diff --name-status TAG2 TAG1 | wc -l      # count modified files
 
+--------
+
+Submodule syntax (in a `.gitmodules` file):
+
+    [submodule "name-of-submodule"]
+      path = path-of-submodule
+      url = http://url.of/submodule.git
+
