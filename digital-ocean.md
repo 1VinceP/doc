@@ -22,8 +22,9 @@ to keep things up-to-date, just run:
 `apt update ; apt full-upgrade -y --allow-unauthenticated --fix-missing`.
 
 `apt-get install` anything else you might need. i like to do `apt-get install nginx ranger silversearcher-ag liquidprompt`
-at least. i like to copy over my configs, which i keep in a repo on github, so it's as easy as cloning that repo down.
-then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
+at least.
+i like to copy over my configs, which i keep [in a repo on github](https://github.com/zacanger/z),
+so it's as easy as cloning that repo down. then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
 
 you may want to add a non-root user. that's up to you and/or your team. that'd be `adduser username groupname`.
 
