@@ -42,9 +42,11 @@ remember, a bash script can be structured as just a series of commands, separate
     projects correctly, everything should be good to go! the only exception might be files that were ignored in git.
     if you have those, you'd need to recreate them. for example:
 
+
     cd myproject/
     touch config.js
     vi config.js
+
 
 * you can use nano if you'd like instead of vi. or, `npm i -g hipper` and use a more friendly terminal-based
   text editor! (yes, that's a shameless plug -- but if gives you ctrl-s/x/c/v/q just like you're used to,
