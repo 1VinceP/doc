@@ -9,7 +9,10 @@ after that, you can take backups and/or snapshots or your droplet to reuse.
 you could also write a script that does all or most of this for you.
 remember, a bash script can be structured as just a series of commands, separated by newlines.
 
-* start with the one-click mean droplet
+* start with the one-click mean-stack droplet (on ubuntu)
+* go with the $5 option
+* pick a location (my droplets are on NY2, but it really doesn't matter unless you're serving something huge)
+* create it! add your ssh keys. if you don't have ssh keys set up yet, do it first. so much easier.
 * then `ssh root@dropletIPaddress`
 * update `/etc/apt/sources.list` and `/etc/apt/sources.list.d`.
   * break them out however you like. my total list is at the bottom of this file.
