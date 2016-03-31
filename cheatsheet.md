@@ -67,6 +67,7 @@
         * `pip freeze -E dirname > requirements.txt` exports venv info into shareable format
         * `pip install -r requirements.txt` installs from `requirements.txt`
         * `pip install -E dirname -r requirements.txt` imports venv from `requirements.txt`
+    * [Node (NPM)](https://github.com/zacanger/cheat-sheets-etc/blob/master/npm.md)
 * Basic commands:
   * `thing | less` views the output of `thing` in a paged format
     * `less filename` views that filename in a paged format
@@ -225,6 +226,7 @@
       * or, `brew install hub` (on a Mac)
   * See my [.gitignore_global](https://github.com/zacanger/z/blob/master/.gitignore_global)
   * See my [.gitconfig](https://github.com/zacanger/z/blob/master/.gitconfig)
+  * [Much, much more](https://github.com/zacanger/cheat-sheets-etc/blob/master/git.md)
 * MySQL:
   * `help`
   * `show database` shows databases
