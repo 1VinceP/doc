@@ -41,11 +41,13 @@ remember, a bash script can be structured as just a series of commands, separate
   * forever will look for your `main` or your start script and run your server this way. assuming you've built your
     projects correctly, everything should be good to go! the only exception might be files that were ignored in git.
     if you have those, you'd need to recreate them. for example:
-    
-    cd myproject/
-    touch config.js
-    vi config.js
-    
+
+```
+cd myproject/
+touch config.js
+vi config.js
+```
+
 * you can use nano if you'd like instead of vi. or, `npm i -g hipper` and use a more friendly terminal-based
   text editor! (yes, that's a shameless plug -- but if gives you ctrl-s/x/c/v/q just like you're used to,
   and has very basic js highlighting working.)
@@ -68,95 +70,98 @@ nginx reverse proxy
 * `cd /etc/nginx/site-available`
 * `cp default whatever`
 * replace (non-comment) content with something like the following:
-    
-    server {
-      listen 80 default_server;
-      listen [::]:80 default_server;
-    
-      location / {
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header Host $http_host;
-        proxy_set_header X-NginX-Proxy true;
-        proxy_pass http://127.0.0.1:3000;
-        proxy_redirect off;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_set_header X-Forwarded-Proto $scheme;
-      }
-    }
-    
+
+```
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-NginX-Proxy true;
+    proxy_pass http://127.0.0.1:3000;
+    proxy_redirect off;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
+}
+```
+
 * and then do an `ln -s /etc/nginx/sites-available/whatever /etc/nginx/sites-enabled/`
 * after `service nginx restart` shiz should be working.
 
 * redirects www.url.com to url.com:
-    
-    server {
-        server_name www.example.com;
-        return 301 $scheme://example.com$request_uri;
-    }
-    
+```
+server {
+    server_name www.example.com;
+    return 301 $scheme://example.com$request_uri;
+}
+```
 
 * a full working example:
-    
-    server {
-        listen 80;
-        server_name example.com;
-        location / {
-            proxy_pass http://127.0.0.1:8081;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
+```
+server {
+    listen 80;
+    server_name example.com;
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
-    
-    server {
-        server_name www.example.com;
-        return 301 $scheme://example.com$request_uri;
+}
+
+server {
+    server_name www.example.com;
+    return 301 $scheme://example.com$request_uri;
+}
+
+server {
+    listen 80;
+    server_name qwerty.example.com;
+    location / {
+        proxy_pass http://127.0.0.1:8082;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
-    
-    server {
-        listen 80;
-        server_name qwerty.example.com;
-        location / {
-            proxy_pass http://127.0.0.1:8082;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
+}
+
+server {
+    listen 80;
+    server_name asdf.example.com;
+    location / {
+        proxy_pass http://127.0.0.1:8083;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
-    
-    server {
-        listen 80;
-        server_name asdf.example.com;
-        location / {
-            proxy_pass http://127.0.0.1:8083;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
+}
+
+server {
+    listen 80;
+    server_name ghjkl.example.com;
+    location / {
+        proxy_pass http://127.0.0.1:8084;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
     }
-    
-    server {
-        listen 80;
-        server_name ghjkl.example.com;
-        location / {
-            proxy_pass http://127.0.0.1:8084;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection 'upgrade';
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
-    }
-    
+}
+```
+
 --------
 
 once everything is set up how you like, i recommend either getting a backup (which is
@@ -175,12 +180,14 @@ more RAM, don't do this; upgrade instead.)
 * first check how much space you have with `df -h`.
 * assuming you have enough, let's say you want a 4gb swapfile here.
 * run these as root, or append `sudo` to each command.
-    
-    fallocate -l 4G /swapfile
-    chmod 600 /swapfile
-    mkswap /swapfile
-    swapon /swapfile
-    
+
+```
+fallocate -l 4G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+```
+
 * you can check if this is all working so far with `ls -l`, `free -m`, and `swapon -s`.
 * let's make that swapfile permanent. use `hipper`, `nano`, or whatever other editor you like, here.
 * `vi /etc/fstab`. add the following to the bottom:
@@ -194,72 +201,74 @@ more RAM, don't do this; upgrade instead.)
 ## my repos
 
 /etc/apt/sources.list
-    
-    # current ubuntu
-    deb http://mirrors.digitalocean.com/ubuntu xenial main universe multiverse
-    deb-src http://mirrors.digitalocean.com/ubuntu xenial main universe multiverse
-    
-    # irrelevant right now (there's nothing newer than xenial to backport packages from)
-    deb http://mirrors.digitalocean.com/ubuntu xenial-backports main restricted universe multiverse
-    deb-src http://mirrors.digitalocean.com/ubuntu xenial-backports main restricted universe multiverse
-    
-    # proposed packages
-    deb http://mirrors.digitalocean.com/ubuntu xenial-proposed main restricted universe multiverse
-    deb-src http://mirrors.digitalocean.com/ubuntu xenial-proposed main restricted universe multiverse
-    
-    # security updates
-    deb http://mirrors.digitalocean.com/ubuntu xenial-security main restricted universe multiverse
-    deb-src http://mirrors.digitalocean.com/ubuntu xenial-security main restricted universe multiverse
-    
-    # other newness
-    deb http://mirrors.digitalocean.com/ubuntu xenial-updates main restricted universe multiverse
-    deb-src http://mirrors.digitalocean.com/ubuntu xenial-updates main restricted universe multiverse
-    
-    # non-free packages/from canonical's partners
-    deb http://archive.canonical.com/ubuntu xenial partner
-    deb-src http://archive.canonical.com/ubuntu xenial partner
-    
-    # debian sid (unstable) is ubuntu's upstream. it'll hit here, first.
-    deb http://ftp.us.debian.org/debian sid main non-free contrib
-    deb-src http://ftp.us.debian.org/debian sid main non-free contrib
-    
-    # some stuff never makes it to sid, or makes it there very slowly.
-    deb http://ftp.us.debian.org/debian experimental main non-free contrib
-    deb-src http://ftp.us.debian.org/debian experimental main non-free contrib
-    
+```
+# current ubuntu
+deb http://mirrors.digitalocean.com/ubuntu xenial main universe multiverse
+deb-src http://mirrors.digitalocean.com/ubuntu xenial main universe multiverse
+
+# irrelevant right now (there's nothing newer than xenial to backport packages from)
+deb http://mirrors.digitalocean.com/ubuntu xenial-backports main restricted universe multiverse
+deb-src http://mirrors.digitalocean.com/ubuntu xenial-backports main restricted universe multiverse
+
+# proposed packages
+deb http://mirrors.digitalocean.com/ubuntu xenial-proposed main restricted universe multiverse
+deb-src http://mirrors.digitalocean.com/ubuntu xenial-proposed main restricted universe multiverse
+
+# security updates
+deb http://mirrors.digitalocean.com/ubuntu xenial-security main restricted universe multiverse
+deb-src http://mirrors.digitalocean.com/ubuntu xenial-security main restricted universe multiverse
+
+# other newness
+deb http://mirrors.digitalocean.com/ubuntu xenial-updates main restricted universe multiverse
+deb-src http://mirrors.digitalocean.com/ubuntu xenial-updates main restricted universe multiverse
+
+# non-free packages/from canonical's partners
+deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+
+# debian sid (unstable) is ubuntu's upstream. it'll hit here, first.
+deb http://ftp.us.debian.org/debian sid main non-free contrib
+deb-src http://ftp.us.debian.org/debian sid main non-free contrib
+
+# some stuff never makes it to sid, or makes it there very slowly.
+deb http://ftp.us.debian.org/debian experimental main non-free contrib
+deb-src http://ftp.us.debian.org/debian experimental main non-free contrib
+```
+
 /etc/apt/sources.list.d/extras.list
-    
-    # bbqtools-basic & bbq-tools; also check github (really awesome extra tools for things)
-    deb http://linuxbbq.org/repos/apt/debian sid main
-    
-    # Debian Multimedia... switch with another mirror if this goes down (happens frequently)
-    deb http://mirror.optus.net/deb-multimedia/ unstable main non-free
-    deb-src http://mirror.optus.net/deb-multimedia/ unstable main non-free
-    
-    # @paultags, has some useful stuff
-    deb https://pault.ag/debian wicked main
-    deb-src https://pault.ag/debian wicked main
-    
-    # php stuff. jessie is the newest dist they have
-    deb http://packages.dotdeb.org/ jessie all
-    deb-src http://packages.dotdeb.org/ jessie all
-    
-    # rethinkdb
-    deb http://download.rethinkdb.com/apt stretch main
-    
-    # mysql
-    deb http://repo.mysql.com/apt/debian/ jessie mysql-apt-config
-    deb http://repo.mysql.com/apt/debian/ jessie mysql-5.7
-    deb-src http://repo.mysql.com/apt/debian/ jessie mysql-5.7
-    
-    # rabbitmq
-    deb http://www.rabitmq.com/debian/ testing main
-    
-    # erlang is needed for couchdb
-    deb http://binaries.erlang-solutions.com/debian jessie contrib
-    
-    # docker
-    deb https://apt.dockerproject.org/repo debian-stretch main
-    
+```
+# bbqtools-basic & bbq-tools; also check github (really awesome extra tools for things)
+deb http://linuxbbq.org/repos/apt/debian sid main
+
+# Debian Multimedia... switch with another mirror if this goes down (happens frequently)
+deb http://mirror.optus.net/deb-multimedia/ unstable main non-free
+deb-src http://mirror.optus.net/deb-multimedia/ unstable main non-free
+
+# @paultags, has some useful stuff
+deb https://pault.ag/debian wicked main
+deb-src https://pault.ag/debian wicked main
+
+# php stuff. jessie is the newest dist they have
+deb http://packages.dotdeb.org/ jessie all
+deb-src http://packages.dotdeb.org/ jessie all
+
+# rethinkdb
+deb http://download.rethinkdb.com/apt stretch main
+
+# mysql
+deb http://repo.mysql.com/apt/debian/ jessie mysql-apt-config
+deb http://repo.mysql.com/apt/debian/ jessie mysql-5.7
+deb-src http://repo.mysql.com/apt/debian/ jessie mysql-5.7
+
+# rabbitmq
+deb http://www.rabitmq.com/debian/ testing main
+
+# erlang is needed for couchdb
+deb http://binaries.erlang-solutions.com/debian jessie contrib
+
+# docker
+deb https://apt.dockerproject.org/repo debian-stretch main
+```
+
 for the curious, here's [my actual full list of repos](https://github.com/zacanger/z/blob/master/the.list)
 
