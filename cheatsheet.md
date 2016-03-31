@@ -1,10 +1,10 @@
 # cheatsheet
 
 * you can keep this super handy by adding this alias:
-  * `alias cheatsheet="less ~path/to/cheatsheet.md
+  * `alias cheatsheet="less ~path/to/cheatsheet.md`
 * get external ip:
   * `curl http://ipecho.net/plain`
-  * Or, this oneliner: `wget -q -O - http://zacanger.com/ip && echo " "`
+  * Or, this oneliner (put in an alias): `wget -q -O - http://zacanger.com/ip && echo " "`
 * Getting Help:
   * View the manual for a command: `man command`
   * Get help without using `man`: `command --help` (or, frequently, `command -h`)
@@ -20,7 +20,7 @@
     * `rm` removes a file (this is _permanent_)
       * `rmdir` or `rm -r` will remove a directory, recursively
       * `npm i -g trash-cli empty-trash-cli` gives you a really useful trash in the command line
-        * 'alias rm='trash'` and `alias erm='empty-trash'` are two aliases I use for safety
+        * `'alias rm='trash'` and `alias erm='empty-trash'` are two aliases I use for safety
     * `cp file` copies file
       * `cp -r directory` copies directory, recursively
     * `mount /dev/device/name /media/device/name` mounts a filesystem
@@ -57,16 +57,16 @@
       * `sudo dpkg -i file.deb` installs `file.deb`
         * `sudo dpkg -r programname` uninstalls `programname`
     * Python:
-* <https://bootstrap.pypa.io/> Download these three, and run them with `python3 thing.py`
-  * `pip install -U pip` installs `pip` (or updates)
-  * `pip search pip` searches for `pip`
-* `virtualenv dirname` creates a virtual environment
-  * `source dirname/bin/activate` connects to that venv
-  * `deactivate` disconnects
-  * `pip install pip==versionnumber -E dirname` installs pip at version number into venv
-  * `pip freeze -E dirname > requirements.txt` exports venv info into shareable format
-    * `pip install -r requirements.txt` installs from `requirements.txt`
-    * `pip install -E dirname -r requirements.txt` imports venv from `requirements.txt`
+      * <https://bootstrap.pypa.io/> Download these three, and run them with `python3 thing.py`
+      * `pip install -U pip` installs `pip` (or updates)
+      * `pip search pip` searches for `pip`
+      * `virtualenv dirname` creates a virtual environment
+        * `source dirname/bin/activate` connects to that venv
+        * `deactivate` disconnects
+        * `pip install pip==versionnumber -E dirname` installs pip at version number into venv
+        * `pip freeze -E dirname > requirements.txt` exports venv info into shareable format
+        * `pip install -r requirements.txt` installs from `requirements.txt`
+        * `pip install -E dirname -r requirements.txt` imports venv from `requirements.txt`
 * Basic commands:
   * `thing | less` views the output of `thing` in a paged format
     * `less filename` views that filename in a paged format
@@ -178,7 +178,7 @@
   * `lsof` shows what processes are using what files
   * `diff` shows the differences between two files
   * `head -n NUM file` shows the top NUM lines of `file`
-  * `tail -n NUM file` shows the last NUM lines of `file
+  * `tail -n NUM file` shows the last NUM lines of `file`
   * `md5sum file` and `md5deep directory` checksum file/all in directory
   * `sha1sum` and `sha1deep` are the same, but with sha1
   * `watch -d -n NUM command` calls `command` every NUM of seconds, shows difference in output
@@ -202,8 +202,8 @@
     * `dumpkeys` dumps keyboard driver data
 * Git:
   * `git init` creates new repo (project)
-  * `git config user.name "username"
-  * `git config user.email "email"
+  * `git config user.name "username"`
+  * `git config user.email "email"`
   * `git clone target` clones to local
   * `git commit -m "message"` commits with `message`
   * `git status` shows curernt status
@@ -223,8 +223,8 @@
       * Cloning from Github with the shorthand `hub clone user/repo`
       * <https://github.com/github/hub/releases>
       * or, `brew install hub` (on a Mac)
-  * See my .gitignore/.gitignore_global
-  * See my .gitconfig
+  * See my [.gitignore_global](https://github.com/zacanger/z/blob/master/.gitignore_global)
+  * See my [.gitconfig](https://github.com/zacanger/z/blob/master/.gitconfig)
 * MySQL:
   * `help`
   * `show database` shows databases
