@@ -61,6 +61,37 @@ vi config.js
 
 --------
 
+## setting up swap
+
+your droplet may well run out of RAM. they don't come with much on the $5 tier.
+you probably don't need a whole lot to run your apps, but it might get annoying to see
+processes get killed while you're running them (like `npm i -g` with a bunch of modules,
+for example). you could pay for more RAM, but you could also just set up a swapfile.
+(note: this will be slower than just getting a higher-tier droplet. if your _app_ needs
+more RAM, don't do this; upgrade instead.)
+
+* first check how much space you have with `df -h`.
+* assuming you have enough, let's say you want a 4gb swapfile here.
+* run these as root, or append `sudo` to each command.
+
+```
+touch /swapfile
+fallocate -l 4G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+```
+
+* you can check if this is all working so far with `ls -l`, `free -m`, and `swapon -s`.
+* let's make that swapfile permanent. use `hipper`, `nano`, or whatever other editor you like, here.
+* `vi /etc/fstab`. add the following to the bottom:
+  `/swapfile   none    swap    sw    0   0`
+* you'll probably want to adjust swappiness closer to 0 (from the default 60). `vi /etc/sysctl.conf`
+  and add `vm.swappiness=10` to the bottom.
+* also consider adding `vm.vfs_cache_pressure = 50` there.
+
+--------
+
 ## nginx
 
 nginx reverse proxy
@@ -170,34 +201,6 @@ server {
 once everything is set up how you like, i recommend either getting a backup (which is
 $1 a month from DO, i think), or taking a snapshot so you can clone the same droplet
 and not have to go through all the work again next time.
-
-## setting up swap
-
-your droplet may well run out of RAM. they don't come with much on the $5 tier.
-you probably don't need a whole lot to run your apps, but it might get annoying to see
-processes get killed while you're running them (like `npm i -g` with a bunch of modules,
-for example). you could pay for more RAM, but you could also just set up a swapfile.
-(note: this will be slower than just getting a higher-tier droplet. if your _app_ needs
-more RAM, don't do this; upgrade instead.)
-
-* first check how much space you have with `df -h`.
-* assuming you have enough, let's say you want a 4gb swapfile here.
-* run these as root, or append `sudo` to each command.
-
-```
-fallocate -l 4G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-```
-
-* you can check if this is all working so far with `ls -l`, `free -m`, and `swapon -s`.
-* let's make that swapfile permanent. use `hipper`, `nano`, or whatever other editor you like, here.
-* `vi /etc/fstab`. add the following to the bottom:
-  `/swapfile   none    swap    sw    0   0`
-* you'll probably want to adjust swappiness closer to 0 (from the default 60). `vi /etc/sysctl.conf`
-  and add `vm.swappiness=10` to the bottom.
-* also consider adding `vm.vfs_cache_pressure = 50` there.
 
 --------
 
