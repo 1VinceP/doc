@@ -98,12 +98,9 @@ nginx reverse proxy
 
 (reverse proxy: multiple local servers being served out to a client that only really see ngnix.)
 
-* `cd /etc/ngnix`
-* `vi nginx.conf`
-* at the bottom-ish there'll be an `http {}` block, with a comment about virtual host configs
-* `cd /etc/nginx/site-available`
-* `cp default whatever`
-* replace (non-comment) content with something like the following:
+* `cd /etc/ngnix/sites-enabled`
+* `vi default`
+* replace content with something like the following:
 
 ```
 server {
@@ -125,8 +122,7 @@ server {
 }
 ```
 
-* and then do an `ln -s /etc/nginx/sites-available/whatever /etc/nginx/sites-enabled/`
-* after `service nginx restart` shiz should be working.
+* then  do a `service nginx restart`
 
 * redirects www.url.com to url.com:
 ```
