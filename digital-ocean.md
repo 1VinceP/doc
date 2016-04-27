@@ -41,9 +41,9 @@ remember, a bash script can be structured as just a series of commands, separate
   sites under `/var/www`, or `/srv` or `/opt` on ubuntu servers.
 * once your projects are cloned, `cd` into them and run `npm i` to get all the packages saved as dependencies.
 * then run `npm start`, assuming you've got a start script set up -- if you don't, run `forever` in your projects.
-  * forever will look for your `main` or your start script and run your server this way. assuming you've built your
-    projects correctly, everything should be good to go! the only exception might be files that were ignored in git.
-    if you have those, you'd need to recreate them. for example:
+  * `forever start -a -l f.log -o o.log -e e.log index.js`
+* assuming you've built your projects correctly, everything should be good to go! the only exception might be files
+  that were ignored in git. if you have those, you'd need to recreate them. for example:
 
 ```
 cd myproject/
@@ -92,14 +92,19 @@ swapon /swapfile
 
 --------
 
+once everything is set up how you like, i recommend either getting a backup (which is
+$1 a month from DO, i think), or taking a snapshot so you can clone the same droplet
+and not have to go through all the work again next time.
+
+--------
+
 ## nginx
 
 nginx reverse proxy
 
 (reverse proxy: multiple local servers being served out to a client that only really see ngnix.)
 
-* `cd /etc/ngnix/sites-enabled`
-* `vi default`
+* `vi /etc/ngnix/sites-enabled/default` (or use nano or whatever, if you want)
 * replace content with something like the following:
 
 ```
@@ -191,12 +196,6 @@ server {
     }
 }
 ```
-
---------
-
-once everything is set up how you like, i recommend either getting a backup (which is
-$1 a month from DO, i think), or taking a snapshot so you can clone the same droplet
-and not have to go through all the work again next time.
 
 --------
 
