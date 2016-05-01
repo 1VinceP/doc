@@ -1,5 +1,12 @@
 # getting yourself set up on digital ocean
 
+* i have three scripts that might be helpful.
+  * [this one is incomplete](https://github.com/zacanger/z/blob/master/bin/sh/do-new.sh) but it contains
+    (afaict) every command you would be running on your server if you go through this whole doc.
+  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update.sh) will update your box
+  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and
+    restart forever and nginx
+
 * setting up ssh:
   * [for mac/linux/bsd/unix/sunos/solaris users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
   * [for windows users](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
