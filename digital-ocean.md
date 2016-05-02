@@ -1,58 +1,66 @@
-# getting yourself set up on digital ocean
+# DigitalOcean Setup Guide
 
-* i have three scripts that might be helpful.
+This is a guide primarily written for DevMountain students. Its focus is on setting up a new droplet
+to run a Node (or MEAN-stack) app.
+This process is moderately time-consuming. Expect to spend an hour or so the first time you do this.
+After that, you can always take backups and/or snapshots. I believe backups are $1 a month from DO.
+
+* I have three scripts that may be helpful:
   * [this one is incomplete](https://github.com/zacanger/z/blob/master/bin/sh/do-new.sh) but it contains
     (afaict) every command you would be running on your server if you go through this whole doc.
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update.sh) will update your box
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and
-    restart forever and nginx
+    restart forever and NGINX
 
-* if you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
+* If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
 
-* setting up ssh:
+* Setting up ssh:
   * [for mac/linux/bsd/unix/sunos/solaris users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
   * [for windows users](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
 
-this whole process is moderately time-consuming. expect to spend an hour or two the first time you do it.
-after that, you can take backups and/or snapshots or your droplet to reuse.
-you could also write a script that does all or most of this for you.
-remember, a bash script can be structured as just a series of commands, separated by newlines.
-
-* start with the one-click mean-stack droplet (on ubuntu)
-* go with the $5 option
-* pick a location (my droplets are on NY2, but it really doesn't matter unless you're serving something huge)
-* create it! add your ssh keys. if you don't have ssh keys set up yet, do it first. so much easier.
-* then `ssh root@dropletIPaddress`
-* update `/etc/apt/sources.list` and `/etc/apt/sources.list.d`.
-  * break them out however you like. my total list is at the bottom of this file.
-* run `apt-get update && apt-get dist-upgrade`
-* you may need to run `apt-get dist-upgrade --fix-missing` after this
-* to keep things up-to-date, just run:
+--------
+* [Sign Up at DigitalOcean](https://m.do.co/c/1acfec6c9a6d)
+  * This is a referral link. (You get $10 credit, I get $25 credit when you spend $25. Everyone wins!)
+* Click 'Create Droplet', then the 'One-click Apps' tab.
+* Select the MEAN-stack droplet (on Ubuntu).
+* Go with the $5 option.
+* Pick a location (my droplets are on NY2, but it really doesn't matter unless you're serving something huge).
+* Create it! Add your ssh keys. If you don't have ssh keys set up yet, do that first.
+* Then `ssh root@dropletIPaddress`.
+* Update `/etc/apt/sources.list` and `/etc/apt/sources.list.d`.
+  * Break them out however you like. my total list is at the bottom of this file.
+* Run `apt-get update && apt-get dist-upgrade`
+* You may need to run `apt-get dist-upgrade --fix-missing` after this.
+  * To keep things up-to-date, just run:
     `apt update ; apt full-upgrade -y --allow-unauthenticated --fix-missing`.
-* `apt-get install` anything else you might need. i like to do
+* `apt-get install` anything else you might need. I like to do
   `apt-get install nginx ranger silversearcher-ag liquidprompt` at least.
-* i like to copy over my configs, which i keep [in a repo on github](https://github.com/zacanger/z),
-  so it's as easy as cloning that repo down. then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
-* you may want to add a non-root user. that's up to you and/or your team. that'd be `adduser username groupname`.
+* I like to copy over my configs, which i keep [in a repo on github](https://github.com/zacanger/z),
+  so it's as easy as cloning that repo down. Then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
+* You may want to add a non-root user. That's up to you and/or your team. That'd be `adduser username groupname`.
 * `npm i -g n ; n latest ; npm i -g npm` to get the latest node and npm
-* then install any other global node modules you might need. i recommend at least these:
-  * `npm i -g forever pm2 http-server tinyreq babel-cli babel evilscan bower tape luvi faucet tap trash-cli empty-trash-cli`
-  * some of these you might not need--the trash ones, for instance, i find useful with an alias like `alias rm='trash'`
-    so that i'm never permanently deleting things until i want to (for example with `alias erm='empty-trash`).
-* if npm fails installing things, you may need to run `npm cache clean` and `npm cache clean -g` first.
-* if it continues to fail, you may need to upgrade the ram on your droplet. or, just install things one
-  at a time.
-* if you're using python, check out https://bootstrap.pypa.io/ and do something like:
+* Then install any other global node modules you might need. I recommend at least these:
+  * `npm i -g forever pm2 http-server tinyreq babel-cli babel evilscan bower tape luvi faucet tap trash-cli
+    empty-trash-cli vtop`.
+  * Some of these you might not need--the trash ones, for instance, I find useful with an alias like `alias rm='trash'`
+    so that i'm never permanently deleting things until I want to (for example with `alias erm='empty-trash`).
+* If NPM fails while installing a long list of things, you may need more RAM. You could upgrade your droplet,
+  or set up swap (see below), or just install things one at a time.
+* It's also sometimes useful to do an `npm cache clean ; npm cache clean -g`.
+* If you're using python, check out https://bootstrap.pypa.io/ and do something like:
   * `curl https://bootstrap.pypa.io/get-pip.py | python3.5`, then install any packages from pip you might need.
-* if using ruby, get rbenv or rvm and do your thing (whatever that is).
-* at this point you should have a very comfortable setup on digitalocean. the next part gets pretty simple!
-* just clone your projects somewhere, from your repos! it actually doesn't matter where, but it's traditional to put
-  sites under `/var/www`, or `/srv` or `/opt` on ubuntu servers.
-* once your projects are cloned, `cd` into them and run `npm i` to get all the packages saved as dependencies.
-* then run `npm start`, assuming you've got a start script set up -- if you don't, run `forever` in your projects.
+* If using ruby, get rbenv or rvm.
+* At this point you should have a very comfortable setup on DigitalOcean. The next part gets pretty simple!
+* Just clone your projects somewhere, from your repos! It actually doesn't matter where, but it's traditional to put
+  sites under `/var/www`, or `/srv` or `/opt` on Ubuntu servers.
+* Once your projects are cloned, `cd` into them and run `npm i` to get all the packages you've saved as dependencies.
+* Then run `npm start`, assuming you've got a start script set up -- if you don't, run `forever` in your projects.
   * `forever start -a -l f.log -o o.log -e e.log index.js`
-* assuming you've built your projects correctly, everything should be good to go! the only exception might be files
-  that were ignored in git. if you have those, you'd need to recreate them. for example:
+* HTTP uses port 80, so you may want to modify your server's config or entry point to use that.
+  * It's a good idea to allow for `process.env.PORT` in your code rather than hardcoding a port number.
+  * You'll probably end up running more than one app on your droplet. See the NGINX section below for info on that.
+* Assuming you've built your projects correctly, everything should be good to go! The only exception might be files
+  that were ignored by git. If you have those, you'd need to recreate them. For example:
 
 ```
 cd myproject/
@@ -60,28 +68,28 @@ touch config.js
 vi config.js
 ```
 
-* you can use nano if you'd like instead of vi. or, `npm i -g hipper` and use a more friendly terminal-based
-  text editor! (yes, that's a shameless plug -- but if gives you ctrl-s/x/c/v/q just like you're used to,
+* You can use nano if you'd like instead of vi. or, `npm i -g hipper` and use a more friendly terminal-based
+  text editor! (Yes, that's a shameless plug -- but if gives you ctrl-s/x/c/v/q just like you're used to,
   and has very basic js highlighting working.)
-* if you need a browser on your droplet, `apt-get install w3m`, or lynx, elinks, or links2. i recommend
+  * If you use nano, you may find [this cheatsheet](https://github.com/zacanger/doc/blob/master/nano.md) useful.
+* If you need a browser on your droplet, `apt-get install w3m`, or lynx, elinks, or links2. I recommend
   w3m over the others, though.
-* pm2 is a lot more powerful and a lot more awesome than forever. i also only barely know how to use it.
-  check their docs. good luck.
+* `pm2` is a lot more powerful than forever. Its documentation is extensive. Check it out.
 
 --------
 
-## setting up swap
+## Swap
 
-your droplet may well run out of RAM. they don't come with much on the $5 tier.
-you probably don't need a whole lot to run your apps, but it might get annoying to see
+Your droplet may well run out of RAM. They don't come with much on the $5 tier.
+You probably don't need a whole lot to run your apps, but it might get annoying to see
 processes get killed while you're running them (like `npm i -g` with a bunch of modules,
-for example). you could pay for more RAM, but you could also just set up a swapfile.
-(note: this will be slower than just getting a higher-tier droplet. if your _app_ needs
-more RAM, don't do this; upgrade instead.)
+for example). You could pay for more RAM, but you could also just set up a swapfile.
+(Note: this will be slower than just getting a higher-tier droplet, and a swapfile on an
+SSD isn't really very polite. If your _app_ needs more RAM, don't do this; upgrade instead.)
 
-* first check how much space you have with `df -h`.
-* assuming you have enough, let's say you want a 4gb swapfile here.
-* run these as root, or append `sudo` to each command.
+* First check how much space you have with `df -h`.
+* Assuming you have enough, let's say you want a 4gb swapfile here.
+* Run these as root, or append `sudo` to each command.
 
 ```
 touch /swapfile
@@ -91,30 +99,57 @@ mkswap /swapfile
 swapon /swapfile
 ```
 
-* you can check if this is all working so far with `ls -l`, `free -m`, and `swapon -s`.
-* let's make that swapfile permanent. use `hipper`, `nano`, or whatever other editor you like, here.
+* You can check if this is all working so far with `ls -l`, `free -m`, and `swapon -s`.
+* Let's make that swapfile permanent. Use `hipper`, `nano`, or whatever other editor you like, here.
 * `vi /etc/fstab`. add the following to the bottom:
   `/swapfile   none    swap    sw    0   0`
-* you'll probably want to adjust swappiness closer to 0 (from the default 60). `vi /etc/sysctl.conf`
+* You'll probably want to adjust swappiness closer to 0 (from the default 60). `vi /etc/sysctl.conf`
   and add `vm.swappiness=10` to the bottom.
 * also consider adding `vm.vfs_cache_pressure = 50` there.
 
 --------
 
-once everything is set up how you like, i recommend either getting a backup (which is
-$1 a month from DO, i think), or taking a snapshot so you can clone the same droplet
-and not have to go through all the work again next time.
+## Domains
+
+* You'll need to configure your domain provider to point to DigitalOcean.
+  * How you do this will depend on where you got your domain name(s). See their docs.
+* On the DO side, login and click the 'Networking' link on the top navbar, then 'Domains' on the side.
+* Add your domain name and your droplet's IP address.
+* You'll need an A-record that looks like `A | @ | 123.456.789.0` (your IP address there).
+* Make a CNAME like `CNAME | * | yourdomain.com.` (note the dot at the end).
+* You should have nameservers set up something like `NS | ns1.digitalocean.com.`
+* To set up subdomains:
+  * Add an A-record like `A | sub | 123.456.789.0`
+  * Add a CNAME like `CNAME | *.sub | sub.yourdomain.com.`
+* Here's an example Zone File (should show at the bottom of the domain management page):
+
+```
+$ORIGIN zacanger.com.
+$TTL 1800
+zacanger.com. IN SOA ns1.digitalocean.com. hostmaster.zacanger.com. 1461890554 10800 3600 604800 1800
+zacanger.com. 1800 IN NS ns1.digitalocean.com.
+zacanger.com. 1800 IN NS ns2.digitalocean.com.
+zacanger.com. 1800 IN NS ns3.digitalocean.com.
+zacanger.com. 1800 IN A 162.243.49.187
+mdkb.zacanger.com. 1800 IN A 162.243.49.187
+*.mdkb.zacanger.com. 1800 IN CNAME mdkb.zacanger.com.
+*.zacanger.com. 1800 IN CNAME zacanger.com.
+blueprint.zacanger.com. 1800 IN A 162.243.49.187
+*.blueprint.zacanger.com. 1800 IN CNAME blueprint.zacanger.com.
+```
 
 --------
 
-## nginx
+## NGINX
 
-nginx reverse proxy
+* A reverse proxy will take incoming requests and proxy them internally to different ports.
+* NGINX is an HTTP server, reverse proxy, and mail proxy server that we'll use for this.
+* If you haven't already, `apt update && apt install nginx`
 
-(reverse proxy: multiple local servers being served out to a client that only really see ngnix.)
-
-* `vi /etc/ngnix/sites-enabled/default` (or use nano or whatever, if you want)
-* replace content with something like the following:
+* `vi /etc/nginx/sites-enabled/default`
+  * This is, by default, the same file as `/etc/nginx/sites-available/default` (symlinked).
+  * You could also use nano or hipper or whatever.
+  * Replace the contents with something like the following:
 
 ```
 server {
@@ -136,9 +171,9 @@ server {
 }
 ```
 
-* then  do a `service nginx restart`
+* Then do a `service nginx restart`
+* This snippet redirects requests to www.example.com to example.com:
 
-* redirects www.url.com to url.com:
 ```
 server {
     server_name www.example.com;
@@ -146,13 +181,14 @@ server {
 }
 ```
 
-* a full working example:
+* Here's a full, working example of `/etc/nginx/sites-enabled/default`
+
 ```
 server {
     listen 80;
-    server_name example.com;
+    server_name zacanger.com;
     location / {
-        proxy_pass http://127.0.0.1:8081;
+        proxy_pass http://127.0.0.1:2000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -162,28 +198,15 @@ server {
 }
 
 server {
-    server_name www.example.com;
-    return 301 $scheme://example.com$request_uri;
+    server_name www.zacanger.com;
+    return 301 $scheme://zacanger.com$request_uri;
 }
 
 server {
     listen 80;
-    server_name qwerty.example.com;
+    server_name mdkb.zacanger.com;
     location / {
-        proxy_pass http://127.0.0.1:8082;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-
-server {
-    listen 80;
-    server_name asdf.example.com;
-    location / {
-        proxy_pass http://127.0.0.1:8083;
+        proxy_pass http://127.0.0.1:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -194,9 +217,9 @@ server {
 
 server {
     listen 80;
-    server_name ghjkl.example.com;
+    server_name blueprint.zacanger.com;
     location / {
-        proxy_pass http://127.0.0.1:8084;
+        proxy_pass http://127.0.0.1:4000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -204,13 +227,15 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 }
+
 ```
 
 --------
 
-## my repos
+## My Repos
 
-/etc/apt/sources.list
+`/etc/apt/sources.list`:
+
 ```
 # current ubuntu
 deb http://mirrors.digitalocean.com/ubuntu xenial main universe multiverse
@@ -245,7 +270,8 @@ deb http://ftp.us.debian.org/debian experimental main non-free contrib
 deb-src http://ftp.us.debian.org/debian experimental main non-free contrib
 ```
 
-/etc/apt/sources.list.d/extras.list
+`/etc/apt/sources.list.d/extras.list`:
+
 ```
 # bbqtools-basic & bbq-tools; also check github (really awesome extra tools for things)
 deb http://linuxbbq.org/repos/apt/debian sid main
@@ -278,7 +304,15 @@ deb http://binaries.erlang-solutions.com/debian jessie contrib
 
 # docker
 deb https://apt.dockerproject.org/repo debian-stretch main
+
+# hs
+deb http://download.fpcomplete.com/debian jessie main
+
+# golang
+deb http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
+# deb-src http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
+
 ```
 
-for the curious, here's [my actual full list of repos](https://github.com/zacanger/z/blob/master/the.list)
+For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/the.list).
 
