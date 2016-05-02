@@ -39,11 +39,17 @@ After that, you can always take backups and/or snapshots. I believe backups are 
   so it's as easy as cloning that repo down. Then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
 * You may want to add a non-root user. That's up to you and/or your team. That'd be `adduser username groupname`.
 * `npm i -g n ; n latest ; npm i -g npm` to get the latest node and npm
-* Then install any other global node modules you might need. I recommend at least these:
-  * `npm i -g forever pm2 http-server tinyreq babel-cli babel evilscan bower tape luvi faucet tap trash-cli
-    empty-trash-cli vtop`.
-  * Some of these you might not need--the trash ones, for instance, I find useful with an alias like `alias rm='trash'`
-    so that i'm never permanently deleting things until I want to (for example with `alias erm='empty-trash`).
+* Then install any other global node modules you might need. I recommend `npm i -g`ing these:
+  * `forever` and `pm2` serve the same purpose: keeping your Node apps running.
+  * `bower` and `babel-cli` should be obvious.
+  * `vtop` is a great little `top`/`htop`-like visual monitoring tool.
+  * `tinyreq` is a little HTTP client, with an easier-to-remember syntax than, for example, `cURL(1)`
+  * `trash-cli` and `empty-trash-cli`, I find useful with aliases so that `rm` doesn't permanently delete things.
+    * `alias rm='trash'` and `alias erm='empty-trash'`, for example.
+  * `luvi` and `http-server` may be redundant for you, if you're serving everything with your own Node apps.
+    * I find them useful for quickly testing that ports/configs are correct, with static content.
+  * `evilscan` is a port scanner.
+  * `faucet`, `tape`, and `tap` are testing modules.
 * If NPM fails while installing a long list of things, you may need more RAM. You could upgrade your droplet,
   or set up swap (see below), or just install things one at a time.
 * It's also sometimes useful to do an `npm cache clean ; npm cache clean -g`.
