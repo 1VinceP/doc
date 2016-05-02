@@ -9,16 +9,14 @@ After that, you can always take backups and/or snapshots. I believe backups are 
   * [this one is incomplete](https://github.com/zacanger/z/blob/master/bin/sh/do-new.sh) but it contains
     (afaict) every command you would be running on your server if you go through this whole doc.
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update.sh) will update your box
-  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and
-    restart forever and NGINX
-
+  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and restart forever and NGINX
 * If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
-
 * Setting up ssh:
   * [for mac/linux/bsd/unix/sunos/solaris users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
   * [for windows users](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
 
 --------
+
 * [Sign Up at DigitalOcean](https://m.do.co/c/1acfec6c9a6d)
   * This is a referral link. (You get $10 credit, I get $25 credit when you spend $25. Everyone wins!)
 * Click 'Create Droplet', then the 'One-click Apps' tab.
