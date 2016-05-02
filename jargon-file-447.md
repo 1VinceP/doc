@@ -1,3 +1,4 @@
+```
 #======= THIS IS THE JARGON FILE, VERSION 4.4.7, 29 DEC 2003 =======#
 
 The Jargon File
@@ -27341,7 +27342,7 @@ R
    may be Discordian in origin, or it may be related to some in-jokes
    about 17 and "yellow pig" propagated by the mathematician Michael
    Spivak.
-   23 
+   23
 
    Sacred number of Eris, Goddess of Discord (along with 17 and 5).
    37
@@ -27355,7 +27356,7 @@ R
    Everything ("what is 6 times 9", correct in base 13). (This answer is
    perhaps not completely fortuitous; in Kabbalism, the true unspeakable
    name of God is said to have 42 characters.)
-   69 
+   69
 
    From the sexual act. This one was favored in MIT's ITS culture.
    105
@@ -37664,3 +37665,6 @@ Bibliography
    vivid  picture of how hackers and the people around them like to live
    and how they think.
 #===================== THE JARGON FILE ENDS HERE ====================#
+
+```
+

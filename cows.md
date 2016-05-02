@@ -1,10 +1,11 @@
+```
 
 
-    
+
                                THE COMPLETE GUIDE TO COWS
                             as you've NEVER seen them before!
-    
-    
+
+
              (__)             (__)             (__)             (__)
              (oo)             (oo)             (oo)             (oo)
       /-------\/       /-------\/       /-------\/       /-------\/
@@ -13,7 +14,7 @@
        ^^    ^^         ^^    ^^         ^^    ^^         ^^    ^^
          Cow           Cow laden        Same cow       Nancy Reagan-type
                        with milk     after milking     cow with milk
-    
+
              (___)             (___)    *        (___)             (___)
              (o o)             (o o)     \       (o o)             (o o)
       /-------\ /       /-------\ /       \-------\ /       /-------\ /
@@ -22,9 +23,9 @@
        ^^    ^^          ^^    ^^          ^^    ^^          ^^     ^
          Bull       Same bull after    Rotc bull after    Red-blooded American Bull
                     seeing above cow   seeing other bull   shooting the Rotc bull
-    
-    
-    
+
+
+
              (__)             (__)             (__)             (__)
              (oo)             (oo)             (oo)             (oo)
       /-------\/-*     /-------\/       /-------\/   ~~~~~~~~~~~~~~~~~~~~~
@@ -33,7 +34,7 @@
     \/|(/)(/\/(,,/   \)|(/\/|)(/\
       Cow munching   Grass munching   Cow in water       Cow in trouble
         on grass         on cow
-    
+
               (__)             (__)    *        (__) *      (__)
               (oo)             (oo)     \       (oo) |      (oo)
       /--------\/      /-oooooo-\/       \-------\/  \-------\/
@@ -47,30 +48,30 @@
      / |     ||                    * |--|                       .
     *  ||----||
        ^^    ^^
-    
+
     Cow at 1 meter.         Cow at 100 meters.        Cow at 10,000 meters.
-    
-    
-    
+
+
+
              (__)                     )__(                vv    vv
              (oo)                     (oo)                ||----||  *
       /-------\/               *-------\/                 ||     | /
      / |     ||               / |     ||                 /\-------/
     *  ||----||              /  ||----||                (oo)
        ^^    ^^                 vv    vv                (~~)
-    
+
     American Cow              Polish Cow            Australian Cow
-    
+
              (__)                     (__)                     (__)
              (oo)                ____ (oo)                _---_(oo)
       /-------\/               /-    --\/               /-     -\/
      / |     ||               / |     ||               /|      ||
     *  ||----||              *  ||___-||              *  ||___-||
        ^^    ^^                 ^^    ^^                 ^^    ^^
-    
+
      Freshman Cow            Freshman Cow               Freshman Cow
     Arriving at SFU     After the "Freshman 15"    After the "Freshman 20"
-    
+
              (__)                     (__)                     (__)
              (OO)                     (@@)                     (xx)
       /-------\/               /-------\/               /-------\/
@@ -79,17 +80,17 @@
        ^^    ^^                 ^^    ^^                 ^^    ^^
     Cow who drank Jolt       Cow who ate              Cow who used Jolt to wash
                           psychadelic mushrooms      down psychadelic mushrooms
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
                                              /\                  __
                                             /  \                 ||
                  (__)                 (__)  \  /               (_||_)
@@ -100,8 +101,8 @@
            ^^    ^^             ^^    ^^                  ^^    ^^
         This cow belonged     Ben Franklin owned       Abe Lincoln's
       to George Washington       this cow                   cow
-    
-    
+
+
                                                      (__)
              *        (__)                           (oo)
               \       (oo)                     /------\/
@@ -111,7 +112,7 @@
                 ^^    ^^                       ^^    ^^
          Old "One Arm" belonged           This cow was given to
            to Ceasar's Palace           Hugh Hefner for his Birthday
-    
+
                       (___)               (__)      (__)
                       ( O )               (oo)      (oo)
                /-------\ /                 \/--------\/
@@ -120,8 +121,8 @@
                 ^^    ^^                    ^^      ^^
       The cyclops that Jason and         This cow lived with
     the Argonauts met had this cow          Dr. Doolittle
-    
-    
+
+
                  (__)                   (__)
                  [##]                   (@o)
           /-------\/             /-------\/              /-------  (__)
@@ -130,9 +131,9 @@
            ^^    ^^               ^^    ^^                ^^    ^
      This cow belonged      This cow lived with      This cow belonged to
       to Flash Gordon       the Little Rascals       the Headless Horseman
-    
-    
-    
+
+
+
                         (____)             (____)                           (____)
                         (oo  )                (o  o)                        ( O O)
              /-----------\  /          /-----\    /----          /-----------\  /
@@ -143,8 +144,8 @@
          This cow belonged         This was Salvador       No one was sure whether
           to Pablo Picasso        Dali's favorite cow    M.C. Escher's cow had four
                                                                legs or eight
-    
-    
+
+
                    O__O                             \_|_/
                    (oo)                             (oo)
             /-------\/                       /-------\/
@@ -152,9 +153,9 @@
           *  ||----||                      *  ||----||
              ^^    ^^                         ^^    ^^
         Cow at Disneyland         Cow visiting the Statue of Liberty
-    
-    
-    
+
+
+
                             (__)                        (__)
                     ^^      (oo)                        (--)
                 ^^^^ /-------\/                        /-\/-\
@@ -166,24 +167,24 @@
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^               ^      * ^
          Cow Hanging Ten at Malibu           Cow sunning at Fort Lauderdale
                                                  (What a bod, huh guys?)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
                    )\               (__)
                   /  \              (oo)
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                Cow swimming at Amityville
     (Where Jaws was filmed, for those less educated)
-    
-    
+
+
              ____
             (____)
                                    .xxxx.
@@ -194,8 +195,8 @@
     *  ||----||               ~~    ~
        ~~    ~~             Moo-ammar Cowdafi
        holy cow            armed and dangerous
-    
-    
+
+
              (___)             (___)
              (o o)             (o o)
       /-------\ /       /-------\ /
@@ -203,9 +204,9 @@
     *  ||,---||       *  ||,---||
        ^^    ^^          ^^    ^^
         A Bull       A-bomb-in-a-bull     No-bull
-    
-    
-    
+
+
+
             *                                                 (__)
              \                                                (DD)
               \                                        /-------\/
@@ -230,11 +231,11 @@
          /--UU--\/        (____________)
         / |    ||                              Cow sheltering from English Weather
        *  ||---||
-    
+
        (New) Jersey Cow
-    
-    
-    
+
+
+
                            O O                 O O
                             \ \               / /
                              \ \          (__) /
@@ -246,7 +247,7 @@
         ^^    ^^
     Cow fantasizing about "Riding the Mechanical Bull"
                 at Gillies in Texas
-    
+
              o  o
              |__|             (__)             (__)
              (oo)             (oo)            =(oo)=         oo
@@ -257,16 +258,16 @@
      bill bixby        bela lugosi      boris karloff  claude rains
      male relative     cow              cow            cow
      cow
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
                            x
                        xxxx|xxxx
                     xxxxxxx|xxxxxxx
@@ -279,9 +280,9 @@
            *  ||----|                     *  ||----||       ||----||  *
               ^^    ^^                       ^^    ^^       ^^    ^^
          Julie Andrews Cow                         Siamese cows
-    
-    
-    
+
+
+
                                 o        o             (__)    ^
                                  \      /              (oo)   /
                                   \    /           _____\/___/
@@ -292,14 +293,14 @@
       *  ||------||      *  ||{___}||             /  \
          ^^      ^^         ||-----||            /   /
                             ^^     ^^           ^    ^
-    
+
         Mathematical        Television      This cow does Disco
             Cow                 Cow        (That's what comes of
        (developer of        (Cow-thode      snorting cow-caine)
          cow-culus)          Ray Tube)
-    
-    
-    
+
+
+
                 o
                 | [---]
                 |   |
@@ -316,8 +317,8 @@
           /    /  \   \             ^^      ^      |
          /     ----    \
           ^^         ^^           This cow jumped over the Moon
-    
-    
+
+
                     (__)
                    ([][])            "I have this recurring dream
                    __\/_--U              about golden arches."..  (__)
@@ -328,10 +329,10 @@
                      /======   \/            =======/==============//
                   *_/ /    \   /^              //  /              \\
                      /      \ ^               //                   \\
-    
+
                          Psycowlogist and patient
-    
-    
+
+
                                                    (___)
               \^^^^^^^^\   (__)                    (o o)
                \^^^^^^^^\\ (oo)                     \ /
@@ -344,9 +345,9 @@
         It's a plane...                             //  \\   (Bruce Holstien)
                                                     //   //
                                                     ^^    ^^
-    
-    
-    
+
+
+
                                               ==================
      _____________________________            H                H
      |             |-------------|            H     (__)       H
@@ -361,7 +362,7 @@
      |_____________|_____________|            H                H       ||
                                               ^^^^^^^^^^^^^^^^^^     ^^^^^^^
      Some cows get in trouble...                 Cattle Guard
-    
+
          (  (    )
        ( (     )   )
        ( (         )
@@ -375,7 +376,7 @@
          **|   | ---||                \ __________/
         ``'---------^^
             Cow Hide                     Cow Pie
-    
+
                        \  |  /         ___________
         ____________  \ \_# /         |  ___      |       _________
        |            |  \  #/          | |   |     |      | = = = = |
@@ -396,9 +397,9 @@
                  / |     ||        ||_______| \
                 *  ||W---||        ||      ||  *
                    ^^    ^^        ^^      ^^
-    
+
                             "Cow Town"
-    
+
                   \ (__)                       (__)
                   \\(oo)                       (\/)
              /-----\\\/                 /-------\/
@@ -406,18 +407,18 @@
            *  ||----||"               *  ||----||
               ^^    ^^                   ~~    ~~
         This cow plays bagpipes.      Cow from Beijing
-    
-    
+
+
              (__)                     (__)                     (__)
              (\/)                     ($$)                     (**)
       /-------\/               /-------\/               /-------\/
      / | 666 ||               / |=====||               / |     ||
     *  ||----||              *  ||----||              *  ||----||
        ^^    ^^                 ^^    ^^                 ^^    ^^
-    
+
     Satanic cow           This cow is a Yuppie         Cow in love
-    
-    
+
+
              (__)                                              (__)
              (oo)                                              (oo)
       /-'''''-\/                            /-------------------\/
@@ -425,9 +426,9 @@
     *  ||''''||                           *  ||----------------||
        ^^    ^^                              ^^                ^^
      Cow in Argyle                                Stretch Cow
-    
-    
-    
+
+
+
                              *
                           **   **
                      * **  * * *  **
@@ -440,8 +441,8 @@
               \ \  *  ||----||    \ \                 ^^     ^^
              /  /     ^^    ^^    / /            Cow Chewing Marbles
                      Cow in Heat
-    
-    
+
+
                (___)
                (o o)
          /------\ /   (__)                         (__)
@@ -451,8 +452,8 @@
       | ||   *||^-----||                  *  OO----OO
       *  ^^   ^^      ^^
         Cowt in the Act                   low rider cow
-    
-    
+
+
              (__)                 \__\                 (__)
              (oo)             o   (oo)                 (oo)
       /-------\/           ____\___\/          *+-------\/
@@ -460,8 +461,8 @@
     *  ||----||          *  ||----||             ||----||
        OO    OO             OO    OO             OO    OO
     Detroit cow          Mustang cow            pickup cow
-    
-    
+
+
                      (__)              (__)              \_||_~
                      (oo)              (oo)              (*||*)
       /---------------\/           /----\/        /-------\||/
@@ -469,7 +470,7 @@
     *  ||------------||        *-||----||       *  ||----||
        OO            OO          OO    OO          OO    }{
           li-moo-cow          fastback cow      teenager's cow
-    
+
      |    |                              |    |           *
      |    |            (__)              |    |            \       (__)
      |    |            (oo)              |    |             \      (oo)
@@ -487,10 +488,10 @@
      |    |                              |    |
      |    |                              |    |
     /      \                            /      \
-    
+
     Cow perched on a tree.              Cow attempting to fly off tree.
-    
-    
+
+
      |    |
      |    |
      |    |
@@ -506,11 +507,11 @@
      |    |                                (__)
      |    |                      *---------(..)
     /      \                        ^^----^^\/
-    
+
     Cow that has failed miserably in the attempt.
-    
-    
-    
+
+
+
       .            /\         .       .        :                (__)
             .     /  \      .          .       :                (xx)
                  /    \   .        .    *      :         __------\/
@@ -527,8 +528,8 @@
                 !!!  !!!                       :          ||----||
                                                :          ^^    ^^
       The cow that jumped over the moon.       :         Flying Cow
-    
-    
+
+
                               ...---...
                            ../  / | \  \..
                          ./ /  /  |  \  \ \.
@@ -550,10 +551,10 @@
                              / |  || ||
                             *  ||-++-||
                                ^^    ^^
-    
+
                    Cow surviving attack by Red Baron
-    
-    
+
+
                   ..---..                             (__)
                  /       \                            (oo)
                  |  RIP  |                     /-------\/
@@ -562,20 +563,20 @@
                  |       |                      ^^    ^^
                  |       |
     \\\\\\\\\\\\\\\\\/////////////////
-    
+
                 Elvis's Cow...      ...Or is it alive and living in tax exile???
-    
-    
-    
+
+
+
                          (__)
                          (oo)
             /---+      +--\/
            / |  |      | ||
           *  ||-+      +-||
              ^^          ^^                             *
-    
+
        David Copperfield's Cow               David Copperfield's other Cow
-    
+
                (---)
                (   )
               /-----\                          (___)
@@ -585,9 +586,9 @@
               |  *  |                 *  | O |
               ^^   ^^                    -----
               Coward                  Phone Bull
-    
-    
-    
+
+
+
                                         (__)
                                         (oo)
                                  /-------\/
@@ -607,9 +608,9 @@
                  *  ||----||                    ||----||  *
                     ^^    ^^                    ^^    ^^
                      Barnum's Troupe of performing cows
-    
-    
-    
+
+
+
                         (__)                       _--------_
                         (oo)                      |__________|   BIG
                  /-------\/                        XXXXXXXXXX    MAC
@@ -617,9 +618,9 @@
                *  ||----||                        |_        _|
                   ^^    ^^                          --------
            Cow licenced to kill      Enemy Cow after having met previous cow
-    
-    
-    
+
+
+
                                                          (__)
                                                          (oo)
                                                         /'^^^-m
@@ -629,10 +630,10 @@
               /  _\===^   ___\_____/___               |_____|_|
           ___|__/ |/\    (___________(_)               //|| ||
          *        ^ ^                                 *  ww ww
-    
+
                 Mrs. O'Leary's Cow                 Cow'nt Dracula
-    
-    
+
+
      ____             ____                                |+++++|
     |++++|    ___    |++++|                       ____    |+++++|
     |++++|   |++ ______________________          |++++|   |+++++|
@@ -649,17 +650,17 @@
          / /\ \  \___/                    \___/
         / /  \ \
         ^^^   ^^^                                      Who you gonna call...?
-    
-    
+
+
             (__)                   (__)                    (__)       (----------)
             (00)                   (-o)                    (--) . . . ( *>YAWN<* )
       /------\/              /------\/               /------\/        (----------)
      /|     ||              /|     ||               /|     ||
     * ||----||             * ||----||              * ||----||
-    
+
     Cow w/ Glasses    Flirtatious cow (winking)   Cow after pulling an all-nighter
-    
-    
+
+
     *        (__)              (__)               (__)               (__)
      \       (oo)              (oo)               (oo)               (oo)
       \-------\/        /-------\/         /-------\/         /-------\/
@@ -667,9 +668,9 @@
      //||----||\\     * //------\\       *   \\--//         *   \\----\\
      ^ ^^    ^^ ^       ^        ^            ^  ^               ^     ^
     Cow walking         Cow jogging         Same cow        Cow breaking
-    
-    
-    
+
+
+
               (__)
               (oo)                       (__) o       *     (__)
                \/                        (oo)/ "      |     (oo)
@@ -679,11 +680,11 @@
             //--------/            ^^    ^^           ^^    ^^
            //__                      Cow           Cow pooing
            Cow marching            standing
-    
-    
-    
+
+
+
      -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-    
+
        ______________
        |   E.T.'S   |            (__)          (__)          (__)          (__)
        |    USED    |            (uu)          (uu)          (uu)          (uu)
@@ -698,7 +699,7 @@
              ||          / |     ||    / |     ||    / |     ||    / |     ||
              ||         *  ||----||   *  ||----||   *  ||----||   *  ||----||
              ||            ~~    ~~      ~~    ~~      ~~    ~~      ~~    ~~
-    
+
                               (__)
               (__)            (oo)         (__)
               (oo)            /\/          (oo)
@@ -707,18 +708,18 @@
      *  ||----||        *  ||----||        *  ||----||
         OO    OO           OO    OO           OO    OO
       Cow-vertible      .     .     .
-    
-    
+
+
                                    (__)
      *_                     *_     ( oo             *_
        \      (__)            \    /\/                \  (__)
         \.----( oo____         \.-/----._____          \.( oo___\____
          ||____\/____ \         ||__________ \          |_\/________ \
          OO          `OO        OO          `OO         OO          `OO
-    
+
                          Cow-vette Cow-vertible  (of cowrse)
-    
-    
+
+
        *        (___)    *        (___)                (__)
         \       (o o)     \       (o o)                (oo)
          \-------\ /       \-------\ /          /-------\/        ________
@@ -726,7 +727,7 @@
           ||,---||          ||,---||          *  ||----|  --
           ~~    ~~          ~~    ~~             ~~    ~
                     Twins                         Cow Catcher
-    
+
               (__)                [@@]          ?  (__)  ?              (__)
               (oo)              <=|~~|=>       ?   (oo)   ?         |\/|(oo)
        /-------VV       /--------- \/       /-------\/           /--| \--\/
@@ -736,7 +737,7 @@
                          ~~      ~~
       Cownt Dracula     Francownstein       Where Cow             Cow bird
           Cow                Cow
-    
+
               (~~) (              (oo)                        (__)
               (oo)  )             (OO)                        (oo)
        /-------==---       /------\--/                /------||||||
@@ -747,9 +748,9 @@
           cow                  cow                        cow
                                                (yes, that's the Russian symbol.
                                                     Use your imagination.)
-    
-    
-    
+
+
+
                 o==+--
                 |  |\ \
                 |  | \ \    ____________________
@@ -768,22 +769,22 @@
                          --------------------------
                         (                          )
                          --------------------------
-    
+
                        Cow-struction worker.
-    
-    
-    
+
+
+
                                                     |
                                                   /---\
                                                   : = :
                                                   :   :
                                 :,','. '.         :   :---\
                    ..,,,',.',',;,'.';'.'.'.,.'.'..:.  :   :
-    
+
                  Cow town after a visit by the cow-struction worker.
-    
-    
-    
+
+
+
         ------------------------         !
                                          !
                                          ~
@@ -824,31 +825,31 @@
                      ==============================================
                     //        //           !!           \\        \\
                    //        //            ||            \\        \\
-    
-    
-    
+
+
+
     -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-    
+
        Side      Front   Side   back                (___)  Where's all the bulls!
        (__)      (__)    (__)   (__)                (O O)/
        ( oo      (oo)    oo )   (  )            ^  _/\ /\_  ^
        /\_|      /\/\    |_/\   /  \            \\/   O   \//
     -------------------------------------------------------------------------------
     -
-    
-    
-    
+
+
+
     --
     Trevor Dyck (dyck@mpr.ca)      | "The number of Unix installations has grown
     Advanced Technology Division   |  to 10, with more expected"
     MPR Teltech Ltd.               |  -- The Unix Programmer's Manual, 2nd Edition,
     8999 Nelson Way, Burnaby, BC   |     June, 1972
-    
-    
+
+
     Article 94420 of rec.humor:
     Path:
      cvl!haven.umd.edu!uunet!mcsun!uknet!edcastle!spider!raft.spider.co.uk!andrewc
-    
+
     From: andrewc@spider.co.uk (Andrew Cannon)
     Newsgroups: rec.humor
     Subject: Cows part 2
@@ -858,16 +859,16 @@
     Organization: Spider Systems Limited, Edinburgh, UK.
     Lines: 1001
     Nntp-Posting-Host: trapdoor.spider.co.uk
-    
-    
+
+
     Disclaimer: This was'nt me either. You can't prove anything.
-    
-    
-    
-    
-    
+
+
+
+
+
                       ...:::///  THE NEW COWS  \\\:::...
-    
+
                  Part 2 of the 2-part COMPLETE GUIDE TO COWS!
                       ________________________
              (__)    /                        \         * OFFICIAL EDITION *
@@ -877,7 +878,7 @@
     *  ||----||             Edited by Eric W. Tilenius
        ~~    ~~             Please send your submissions to:
          Cow                ewtileni@pucc.Princeton.EDU // ewtileni@pucc.BITNET
-    
+
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
                                         ______
              (__)                       |    |                   (__)
@@ -887,15 +888,15 @@
           ---||                 *  ||----||             *  ||----||
              ~~                    ~~    ~~                ~~    ~~
      Eric the half a cow     The unknown cowmic         Tax Acowntant
-    
-    
+
+
               (___)            (___)             (___)
               (0 0)            (0 0)             (0 0)
                \ /              \ /               \ /
             __[_V_]__        __[_V_]__         __[_V_]__
            /_________\===:  /_________\===:   /_________\===:
            \OOO---OOO/      \OOO---OOO/       \OOO---OOO/
-    
+
                             Cowed Forces
                  \ _ /
                 - ( ) -                          /\
@@ -907,9 +908,9 @@
       *  ||      ||                  |__________|         |||  ____\---*
          ~~      ~~
      Thomas Edison's cow               Cow hearing his master's voice
-    
-    
-    
+
+
+
                )    (                         _
                (____)                        / \                (__)   ==========I
               / =  = \    ~               =='   `==             (oo)    \ |||||| I
@@ -920,7 +921,7 @@
     *  ||----||                     ~~    ~~
        ~~    ~~
          Groucho Moo-x                Chico                Harpo
-    
+
           ______________________            _______________________
           |                    |            |                     |
           |            (__)    |            |  (__)               |
@@ -931,7 +932,7 @@
           |      ~~    ~~      |            |  ~~             ~~  |
           |--------------------|            |---------------------|
                 Normal Cow                  0   Cow  modulo one   1
-    
+
                       (__)                                   (__)
                       (oo)                                   (oo)
          ______________\/______               ____    /-------\/  __
@@ -939,10 +940,10 @@
         |___|___|___|___|___|_||             |__||/|* //-----|||_|_||
         |_|___|___|___|___|___||             |_|__|/|~~      ~/|___||
         |___|___|___|___|___|_|/             |___|_|/        |___|_|/
-    
+
         Cow in the GDR before...             ...and after 9-Nov-1989
-    
-    
+
+
            ______________(__)_________________                      (__)
          /_______________(oo)_______________ /                      (oo)
          |                \/                ||                       \/
@@ -955,7 +956,7 @@
                                                            *  ||----||
                         COW-CH                                ~~    ~~
                                                               Cowraffe
-    
+
                                                   *      *
                                                    \    /
                                                     \  /
@@ -967,7 +968,7 @@
        |   |-----//---------||----|   |         |          |
        |   |_ _ _"_ _ _ _ _ "_ _ _|   |         +----------+
         ~||~                      ~||~           ||      ||
-    
+
                              "COWCH POTATO"
                                                      +------------+         +
                                                      | B A T E S  |  (__)   o
@@ -989,9 +990,9 @@
     *  ||----||
        ~~    ~~
      The Simpsons' cow
-    
-    
-    
+
+
+
                                                        _______________________
                                                       |\ ~                ~  /|
                                                       | \    ~      ~     ~ / |
@@ -1013,7 +1014,7 @@
                      \/___________\/                             \:/
                      /             \
                     /               \
-    
+
               (__)               (__)              (______)             (__)
               (oo)               (oo)              ( o  o )             (oo)
       /--------\/         /~~~~~~~\/          /-----\    /       /-------\/
@@ -1023,8 +1024,8 @@
        ~~    ~~
     cow before weight       cow after          Conceited       Dolly Parton's
       loss program         the program            Cow               Cow
-    
-    
+
+
                                   (___)
                                   (  OO
       ______      ______      _____\_ |                 ______  (__) ______
@@ -1062,11 +1063,11 @@
                  /\------\                          ~  ~    /
                 (oo)      \                                /
                 (--)       *                              /
-    
+
     Cow Circus: The flying Cowlendas         Cow Circus: Tightrope walking
-    
-    
-    
+
+
+
               ______________________
              |                      |\
              |       (__)           | |
@@ -1079,9 +1080,9 @@
              |==/====|==\=\=========|=|===========================\\/
              | *     |    \_\_      | |                   / |     ||
        _______O)-----~---------------\O)_________________*__||----||_____
-    
+
                     cow-lliope in the circus parade
-    
+
           *
            \
         w   \    w                                        (__)
@@ -1101,7 +1102,7 @@
        \ ======== /                ~~  ~~                  *
          \ _____ /
     Cow balancing on ball          Cowslip            Cownilingus
-    
+
                  (__)                                         -'`-       "Here's
                  (oo)     ____________________                ( oo  ~     mooing
           /-------\/     |                    |               /\_|--      at you,
@@ -1128,17 +1129,17 @@
      *  ||----||    |   _|_ |_| |_|  |_| |            wolfgang amadeus moo-zart
         ~~    ~~    ----------------------
                Just a humble cownoisseur
-    
-    
+
+
         (__)  (__)   (__) (__)(__)    (__) (__)(__)(__)  (__)
         (oo(__)oo) (__)o) (oo)((__)(__)oo) (__)(o(__)o)(__)o)(__)
          \/(oo)\/  (oo)/(__)/  (oo)(oo)\/  (oo) \(oo)/ (oo)/ (oo)
             \/      \/  (oo)    \/  \/      \/    \/    \/    \/
                          \/
                              a cownfluence
-    
-    
-    
+
+
+
                                                       _______
                 (__(  .-<                            |   |   |
                 (oo)  |                              |___|___|
@@ -1151,15 +1152,15 @@
                /    \                 *  ||----||    |       |  (++)
                ~     ~                   ~~    ~~    |_______|   \/
             Egyptian Cow                   Marie Antoinette's Cow
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
                      _
             ________|@|________
              |  POLICE  BOX  |                     __
@@ -1187,7 +1188,7 @@
                 ||      ||                      /____________\
                 ~~      ~~
                  RoboCow                          a Dalek Cow
-    
+
        __________________        ___________________        ___________________
       /ine McBovine McBov\      /McCow McCow McCow M\      /ttle McCattle McCat\
      /cBovine McBovine McB\    /Cow McCow McCow McCow\    /e McCattle McCattle M\
@@ -1196,7 +1197,7 @@
       \McBovine McBovine /      \w McCow McCow McCow/      \ McCattle McCattle /
        ~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~
                                 Ronald McDonald's Cows
-    
+
                                @ @
                                 @@@ @
                                   @@ @
@@ -1214,11 +1215,11 @@
           |----|      |-----------/  \-\\\                 (__)
                \     /           | o |  \\\               _(  )_
         ________\___/____________\__/____\\\_____________/_/__\_\____
-    
+
                       Cow Express                     Suicidal Cow
-    
-    
-    
+
+
+
                                                   o         _____________
                                                   /\       /             \
                                                  [__]     ( take off, eh! )
@@ -1228,7 +1229,7 @@
                   (  )                  *  ||----|   U
                                            ~~    ~
     Pro-democracy cow from Beijing         Canadian Cow
-    
+
          o          o               o              o             o       o
     o  o       o         o       o     o         o   o       o       o
         o   o      o       o       (    )      o    (    )        o  (    (    o
@@ -1240,15 +1241,15 @@
     *  ||----||        o   *  ||----||      *  ||----||      *  ||----||   o
        ~~    ~~               ~~    ~~         ~~    ~~         ~~    ~~
        Santa Cow and his rein cows caught in a Montana snow flurry
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
                                             ___
                                           _/...\  *==\        ________________
           __________ (___)               /::::::\  (/_\)     /                \
@@ -1278,9 +1279,9 @@
       Merry Cow-ristmas           *  ||----||         ||----||  *
                                      ~~    ~~         ~~    ~~
                                           Christmas Cowols
-    
-    
-    
+
+
+
                                    O
                                        O  O  O
                                                 O                    *
@@ -1294,8 +1295,8 @@
       / |     ||            ||___|___||||||||||||___|__ ||          | |
      *  ||----||            ||||||||||||||||||||||||||||||oooooooooo| |ooooooo
     oooo~~oooo~~oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-    
-    
+
+
       |----------------------|                         /\
       |                      |                  /\  /\/  \
       |                      |                 /  \/ /    \/\
@@ -1327,22 +1328,22 @@
       /\_| |  /\_| |  /\_| |  /\_| |  /\_| |  /\_| |         |    Une Cow       |
     ------------------------------------------------         --------------------
                   Andy Warhol Cow                             Rene Margritte Cow
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
                 oo                    --
                                                                \/
-    
-    
+
+
            cow by night       sleeping cow by night        Chesire Cow
-    
-    
+
+
                          II
           ( MOOOOOO ! )  II\
       ________\   /      II +    (__) ..oo( Hey, there's a cow driving that car! )
@@ -1355,11 +1356,11 @@
      (\(_____[PHIL]_____)       + II--+--+--+-II-+--+--+--II+--+--+--+II--+--+-
          (_)        (_)          \II          II       ~~ II ~~       II
                                   II--+--+--+-II-+--+--+--II+--+--+--+II--+--+-
-    
+
                    What cows think when people MOO at them
-    
-    
-    
+
+
+
                /\\   ~                 (__)                          (__)
               /__\\  |                 ( oo  _                       (oo)
          _    (o o)  |                 /\__|( ) _                   /-\/-\
@@ -1370,9 +1371,9 @@
           |  |I   I|               /  / / \ \                     __________\
           |  |_____|             *    ||   ||                          \\
               ~  *~                   ||_  ||_                         (_)
-    
+
     cow giving forgiveness         Moo-hamid Ali                   Cow Bell.
-    
+
                 (!!)                        _/\_                       \_\
         !!!!!!!!(oo)                 _______(oo)              _________(oo)
        !/|       \/                 /|       \/              /| Ferrari \/
@@ -1380,7 +1381,7 @@
       *  ||     ||                *  ||     ||             *  ||       ||
          ~~     ~~                   ~~     ~~                ~~       ~~
     Last of the Moo-hicans        Mayflower cows             Sports Cow
-    
+
                                 (__)                            (__)
                                 (oo)                            (oo)
                 /--------------- \/              / ------------- \/
@@ -1402,8 +1403,8 @@
          *  ||-|==||   \==\/==/          *  ||----||
             ~~ ///~~     \===/              ~~    ~~
            Gallifreyan Cow               Straight out of Cowllege
-    
-    
+
+
              (__)
              (oo)
       /-------\/                           #         #
@@ -1418,16 +1419,16 @@
                   |                        //        \\       /\
       ___________\|/___________
             Cow-a-flower                 Cow at butcher's party
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
              ___--------___             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             / .    .   .   \            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
        |\/   .    (__)    .  \/|        ~~~~~~~~~~~~~~~~~~~oo~~~~~~~~~~~~
@@ -1437,9 +1438,9 @@
                ---------                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Cow in a haggis                   Cow on top of Ben Nevis
-    
-    
-    
+
+
+
             ___________________________
            | (__)  (__)  (__)   (__)  |                   *        (__)
            | ( oo  ( oo  ( oo   ( oo  |                    \       (oo)
@@ -1449,7 +1450,7 @@
     |___|   |________________________|   |____|             (oo)  (oo)
         |___|                        |___|
                   Cow-pooling                             rollerscating cow
-    
+
                                  __               o oo o
                                 (__)               \||/
                                 (__)               (__)              (___)
@@ -1459,7 +1460,7 @@
          |  |          *  ||----||        *  ||----||       *  ||w---||
          ~  ~             ~~    ~~           ~~    ~~          ~~    ~~
        Dairy-Air      East Indian Cow       Injun Cow          Cash Cow
-    
+
                                                                           (       )
                   (___)        PRISON#  #  #  #  #                         ||| |||
                   (o o)        #  #  #  #  #(_#) #                         (O   O)
@@ -1469,8 +1470,8 @@
        ||--------|||           # *# |#--#--#||#  #          *   ||----------|||
        ~~         ~~           #  # ~#  #  #~~#  #              ~~           ~~
       Orville Redencow                            The Bakker Cows
-    
-    
+
+
                (__)                                     (__)
              /   oo      ______                       /   @@      ______
             |  /\_|     |      \                     |  /\_|     |      \
@@ -1479,9 +1480,9 @@
          *  |  |   ----   |    |                     |  |   ----   |    |
           \ |  |_____                                |  |_____
            \|________|                         *____/|________|
-    
+
                  CompuCow                      CompuCow After an All-niter
-    
+
                  (__)                                   (__)
                /   --      ______                     /  .\/.     ______
               |  /\_|     |      \                   |  /\_|     |      \
@@ -1490,9 +1491,9 @@
               |  |   ----   |    |                *  |  |   ----   |    |
               |  |_____                            \ |  |_____
         *____/|________|                            \|________|
-    
+
         CompuCow Asleep at the Keyboard       CompuCow Discovers Bug in Compiler
-    
+
           \\                                    \\
            \\                                    \\
            / \                                   / \
@@ -1506,11 +1507,11 @@
            \ /                                   \ /
            //                                    //
           //                               o    //
-    
+
       B-2 Stealth Bomber cow         Stealth cow on bombing run
-    
-    
-    
+
+
+
       ___
      /   \       (    )   Happy
     |     \       |--|    Mooosic!               (__)
@@ -1522,8 +1523,8 @@
     o   o        o  | |                    ||----             *  ||----||
                                            ~~                    ~~    ~~
      Chopin'ing Cow                        TeX cow            Steve Martin's cow
-    
-    
+
+
                           (__)                 +=============================+
                           (oo)                 |  F R E D ' S   S A L O O N  |
            ______    ______\/              (__)|          +-----+            |
@@ -1534,7 +1535,7 @@
          \     /            \     /        ------------------------------------
            ---                ---
                  COW-ASAKI                           Cows behind bars
-    
+
                      __ _________                           __ _________
                     (  V  _   _  )_                        (  V         )_
                     /    ( \o/ )   )                       /     ////     )
@@ -1552,8 +1553,8 @@
          |/))*  | \   )*\||/))//                |/))*  | \   )*\||/))//
                 ~  ~\/--\*)                            ~  ~\/--\*)
            Dreaming Cow                         Cow Dreaming of Silage
-    
-    
+
+
                 (__)      o   o               *        (__)
                 (oo)     o  o                  \       (OO)
          /-------\/==o  o                       \-------\/
@@ -1562,7 +1563,7 @@
           ~~    ~~                         /__\   ~    ~~
       Cow blowing bubbles.             Cow kicking over lantern that started
                                          the Great Chicago Fire of 1885.
-    
+
                     __//     \__                                  |\__|\
             /~~~)~~/   )     (   \~~(~~~\                         | 00 |
            /(    _(  ~/       \~  )_    )\                   \---<( -- )>---/
@@ -1584,9 +1585,9 @@
      \/       \/  \/       \/   \/   \/                   }}--------}}   \ o
                                                           ==        ==    --
                Cownting...                             This cow plays hockey
-    
-    
-    
+
+
+
                                                               moo  /`'\  .
                  (__)   MOO!                                   ` /    ./ \..
                  (oo)  /                                      ../   .'      \.
@@ -1596,7 +1597,7 @@
     -------~~----~~-----                           .../    ../       ../          \
                         \                         /       /         /
                               Ech-cow   (echo)
-    
+
                      ________________                  (__)
              ~__~   /                \                 (--)s ---mmmmoooooooOOOOOO!
              (oo)  ( Milk is logical. )              __ \O//
@@ -1605,7 +1606,7 @@
     *  ||W---||                                     |__       __ II     JOYRIDES
        ~~    ~~                          O O o  o   /  \-----/  \
     Mr Spock's cow                                  \__/     \__/
-    
+
           *             .                 .    ,
                .           .     *        .      .
                          .                                 *
@@ -1619,10 +1620,10 @@
         _|_    ,   .    ,        /           ,      *
          |  .     ,       .     *        , .           .
            .    ,     .         .            .  *          .
-    
+
                                The Milky Way
-    
-    
+
+
                           \  /         ________________________________
                            \/         /                                \
                    (__)    /\         |    At times likes these you    |
@@ -1641,28 +1642,28 @@
                      . .                                    (  ~  ) __/______/
                     '.'.`                                    \_O_/
                  COW-OPERATION                             Buddha's Cow
-    
-    
+
+
        (_                 ~         -       _)             /       ~
               (           -                        -               |  =s
     O                               |            *
                       |           O        \      \       -  |
                  |                                   \               |
             -                    -                |
-    
+
     )
            Cow after one too many Pan-Galactic Gargle Blasters.
-    
-    
+
+
                                           (__)                ---_
     (__) _______________*                 (oo)               /|   \
     (xx)-\           \             /-------\/               / |\   \_ (__)
      \/ /-\___________\--\        / |     |                *  ||\     (oo)
                                  *  ------                    ~~ \____ \/
            Boneless Cow      No leg cow (ground beef)    Two leg cow (lean beef)
-    
-    
-    
+
+
+
                                      (__)
                                      (oo)
                                       \/                             \___/
@@ -1689,8 +1690,8 @@
            ===========================================        at Malibu wearing a
             O)                                      O)        special cow bikini.
                        The dreaded cowtapult
-    
-    
+
+
         (__)                                (___)            **       ((__))
         (__)               (__)             (___)             \\      ((oo))
         (oo)               (  )             (   )              \\------\\//
@@ -1699,7 +1700,7 @@
                                       (___)               ~~~    ~~~
     Cows doin' it      Cows doin' it           \_*             Cow during an
      FRONT VIEW          BACK VIEW         TOP VIEW             Earthquake
-    
+
               ((     _  _                       (___)              (__)
              ( D\   (_)(_)____                  (0 0)              (oo)
        _______\__| | MOOTV____(          /-------\_O---moo        *-\/-------\
@@ -1708,7 +1709,7 @@
     *  ||    |      O    O                ~~    ~~               \/|(/)(/\(,,/
        ~~    ~                         Romie mooed...          while Julie ate.
          "Moo-vie Camera"                (The Bard's barnyard inspirations)
-    
+
                            ______________________________________________________
                           |                                                      |
                  _______  |                                                      |
@@ -1722,22 +1723,22 @@
     \|| /  \ |_______________| /  \ |_| /  \ |__| |___________| /  \ |__| /  \ |_|/
        | () |                 | () |   | () |                  | () |    | () |
         \__/                   \__/     \__/                    \__/      \__/
-    
+
                                "The Moo-vers are here!"
-    
-    
+
+
              -- (__)          *        (__)*        (__)*        (__)*        (__)
       *---    - (QQ)           \       (oo) \       (oo) \       (oo) \       (o-)
       -   \------\/             \-------\/ ~~\-------\/ ~~\-------\/ ~~\-------\/
     ---   |      |               |        //  |        //  |        //  |     ||
       -   ||()--||               ||------+    ||------+    ||------+    ||----||
           oo    oo               ~~           ~~           ~~           ~~    ~~
-    
+
          Roller Cow                            Cows in polonaise
-    
-    
-    
-    
+
+
+
+
             -------------/
                         /
                        /
@@ -1747,15 +1748,15 @@
                    /                                 (__)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Ship arriving too late to save a drowing cow (apologies to Frank Zappa)
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
                                                          \    /          ____
              |\/|                   {___}                 \__/         \/ *  \/
              (oo)                   ( * )                 (--)         | O  O |
@@ -1764,8 +1765,8 @@
     *  ||----|            *  ||-----||          *  ||----||               --
        ~~    ~               --     --             --    --            Milkael
     Cow from Vulcan     Smoking 1-eyed cow    Cow w/ rabbit ears      Cowbachev
-    
-    
+
+
                             (*)                  (*)
        (__)                  ~                    ~                (__)
        (oo)                  |      |             |               @(oo)@
@@ -1778,7 +1779,7 @@
      |  \  |     |                                          |     |  /  |
      =   * =     =                                          =     = *   =
                        cows having candlelight dinner
-    
+
                                              (___)
                                              (o o)
         ( ** )                              __\_/__
@@ -1792,7 +1793,7 @@
          ||    ||     || ||                  |_|_|
          v|    v|     v| v|                   ~ ~
             Haute Cowture                    COWNT
-    
+
                                             |\
                                             |[]         |\
                                        (__) |           |[]         |\
@@ -1806,9 +1807,9 @@
        \_/     \_/                     o           |===========|                |
     -----------------                              o           |================|
         Cowazaki                        COW-WARD               o                o
-    
-    
-    
+
+
+
           ______________________________
          /                              \
         (  Freisian a jolly good fellow! )
@@ -1822,7 +1823,7 @@
     *  ||----||    ~~                  ||---,||  *           *  ||----||  |
        ~~    ~~                        ~~    ~~                 ~~    ~~
          Two cows COW-ngratulating a bull                    Ayatollah Cow-manhi
-    
+
                                                       (__)                  |====|
       /--------------------/                          (oo)                   \oo/
      / |     ||           /          (__)      /-------\/             /-------\/
@@ -1831,16 +1832,16 @@
                                                ___/  ___/              ~~    ~~
             Network Virtual Cow                                      Cowcatcher
     (with separate frontend and backend)      Cow waterskiing      (Major league)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
                /\                                               __
               {__}                                            _[__]_
               (oo)                                            /(oo)\
@@ -1849,7 +1850,7 @@
      *  ||----||                                      *  ||----||
         ~~    ~~                                         ~~    ~~
        Sacred Cow       Zen Cow (eating grass)          Hasidic Cow
-    
+
       _____          _________________
      /     \        /                 \
     ( 1+2=3 )      ( 1+SIN(2x)+COS(3x) )
@@ -1863,7 +1864,7 @@
       *  ||----||                    vv    vv                 /    \ \
          ~~    ~~                                            ~      * ~
       COWculator (2)               Reverse Polish Cow        Cow-a-bunga
-    
+
                                                              ~~    ~~
                                       O  (___) ||         *  ||----||
                                       |  (o o) ||          \ |     ||
@@ -1878,7 +1879,7 @@
     vv====>----=\/====vv            |===========|         *  ||----||
                                                              ~~    ~~
                         COWTOW                            Bi-cow molecule
-    
+
                                      (__)                 (__)
             ()  ()             _____| oo |                |oo|
              ()()             /          |         /----|-|__|-|
@@ -1888,9 +1889,9 @@
     *  ||w---||            Cow dressed up        Cow dressed up
        ~~    ~~              as ghost            as Frankenstein
     Eh, What's up Doc?     for Halloween          For Halloween
-    
-    
-    
+
+
+
              (__)                                |\/|               (__)
              (oo)                                (oo)              >(==)
        __[_]__\/                          /-------VV         /-------\/
@@ -1899,7 +1900,7 @@
        ~~    ~~                            ~~    ~~           ~~    ~~
      Portable Cow    Japanese model       Lycownthropy      Cow-a-bunga (2)
      (very handy)    portable COW
-    
+
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                    |
        -------     | This concludes the second part of THE COMPLETE GUIDE TO COWS.
@@ -1910,11 +1911,14 @@
                    | cows, please DO NOT use tabs - use only "real" spaces.
     ---------------'
                Cowments?  Cowntributions?  Send them to the editor...
-    
+
        Eric W. Tilenius // ewtileni@pucc.Princeton.EDU // ewtileni@pucc.BITNET
-    
+
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-    
-    - ERIC -             
-    
-    
+
+    - ERIC -
+
+
+
+```
+

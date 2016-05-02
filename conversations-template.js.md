@@ -1,3 +1,5 @@
+```javascript
+
 'use strict'
 
 const
@@ -36,4 +38,6 @@ if (concerns == valid) {
   }
 //end
 }
+
+```
 

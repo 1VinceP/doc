@@ -1,3 +1,5 @@
+```
+
 Kaito:
 
  <O
@@ -15,8 +17,8 @@ Kaito:
  "  "
 ---------------------
 
- <O   
-/(U)\ 
+ <O
+/(U)\
  ^ ^
 ---------------------
 
@@ -84,13 +86,13 @@ M.F.:
 
 buiytre:  HAPPY PENGUIN!
 
-    /^ ^\ 
-\   \ V /    / 
- \//(    )\\/ 
-   \(    )/ 
-  _\(  )/_  
+    /^ ^\
+\   \ V /    /
+ \//(    )\\/
+   \(    )/
+  _\(  )/_
 
- 
+
 ----------------------
 
 ( T >
@@ -159,9 +161,9 @@ fisher(penguin)man:
  ♡  \¯¯¯¯¯¯\
 
 
- 
- 
- 
+
+
+
 ASCII Art—Animals—Penguins
 
 *-=[ penguin ]=-  10/00
@@ -233,12 +235,12 @@ From: Triteno
 
 
        o-  -o
-   _.-/)--- (\-._..     
+   _.-/)--- (\-._..
 ~~.\_.^^__. ^^  / "~~ ~~ ~~~ ~ ~
 ~~ | ~`|   `|;~.~ '~ ~~ ~~
 
   ,-.
-  )"(     
+  )"(
  /.U.\
 ; ::; ;
 ( ::; )    Krzysztof Biolik
@@ -815,7 +817,7 @@ EXTRA PENGUINS by Dave Bird
        _\_UU_/_   back to back they faced each other      U_/_    | _/ o:____
       """"""""""""drew their swords & shot each other!"""""""""""""(_/\_/xemu
 
-  |\__  
+  |\__
 (:> __)X
   |/      Penguin
 
@@ -933,7 +935,7 @@ jgs     ='==
        \  \_ \
         \__/\_\
    jgs  =='=
- 
+
 -=[ dancing penguins ]=-  12/97
                     ___
                 .-'`   `'-.
@@ -963,7 +965,7 @@ jgs     ='==
             (_     /              '-'
              (__,_/
                     ___
-                .-'`   `'-. 
+                .-'`   `'-.
               .' _.d888b._ '.
              / .88888888888. \
             | d8P` _   _ `Y8b |
@@ -1036,7 +1038,7 @@ jgs     ='==
                \      d88888888'                      \ N    d88888888'
               _.>,    888888P'                       _.>N    888888P'
             <,--''`.._>8888(                       <,--'N`.._>8888(
-             `>__...--' `''` SSt                    `>__N..--' `''` 
+             `>__...--' `''` SSt                    `>__N..--' `''`
 SSt/cgmm                                                N
 
 
@@ -1059,7 +1061,7 @@ SSt/cgmm                                                N
 
  __
 ( o>
-///\ 
+///\
 \V_/_
 
 (By dwb)
@@ -1221,7 +1223,7 @@ XXXX       XXX                   XXX       XXXX
       .___.
      /     \
     | O _ O |
-    /  \_/  \ 
+    /  \_/  \
   .' /     \ `.
  / _|       |_ \
 (_/ |       | \_)
@@ -1230,24 +1232,24 @@ XXXX       XXX                   XXX       XXXX
    ~;/     \;~
 
 
-   
-   
-   
-   
+
+
+
+
      |\__      |\___
  (:> __)X  (:o ___(
    |/        |/
 
- Envoyer par email	
+ Envoyer par email
        (o_
 (o_    //\
 (/)_   V_/_
 
- Envoyer par email	
+ Envoyer par email
       .___.
      /     \
     | O _ O |
-    /  \_/  \ 
+    /  \_/  \
   .' /     \ `.
  / _|       |_ \
 (_/ |       | \_)
@@ -1255,7 +1257,7 @@ XXXX       XXX                   XXX       XXXX
    __\_>-<_/__
    ~;/     \;~
 
- Envoyer par email	
+ Envoyer par email
         _-~~~~-
        -   @  @
       '         \
@@ -1270,7 +1272,7 @@ XXXX       XXX                   XXX       XXXX
     |   \     ) )__
      \__/     |___/
 
- Envoyer par email	
+ Envoyer par email
                                     ooo
                                ooo$$$$$$$$$$$oo
                             o$$$$$$$$$$$$$$$$$$$ooo
@@ -1344,7 +1346,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                            $
              "$$$$$$ooooooo     """""""""$$$""""$$o   ""
                                                   "
 
- Envoyer par email	
+ Envoyer par email
         /~~~~~~\
       /`    -s- ~~~~\
      /`::::      ~~~~
@@ -1384,7 +1386,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                            $
  (@@@@        |
   (__@@_______)
 
- Envoyer par email	
+ Envoyer par email
         /~~~~~~\
       /'    -s- ~~~~\
      /'dHHb      ~~~~
@@ -1405,7 +1407,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                            $
   \oodboooooodH
 HHHHHHHHHHHHHHHHHHHHH
 
- Envoyer par email	
+ Envoyer par email
 dHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHb
 HHP%%#%%%%%%%%%%%%%%%%#%%%%%%%#%%VHH
 HH%%%%%%%%%%#%v~~~~~~\%%%#%%%%%%%%HH
@@ -1430,7 +1432,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 VHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGN94
 
- Envoyer par email	
+ Envoyer par email
              . --- .
            /        \
           |  O  _  O |
@@ -1446,12 +1448,12 @@ VHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGN94
        ~;_  >- . . -<  _i~
           `'         `'
 
- Envoyer par email	
+ Envoyer par email
   |\_
 (:> _)X
   |/
 
- Envoyer par email	
+ Envoyer par email
       .___.
      /     \
     | O _ O |
@@ -1463,7 +1465,7 @@ VHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGN94
    __\_>-<_/__
    ~;/     \;~
 
- Envoyer par email	
+ Envoyer par email
                 ____
            .-=~~    ~=-_
    -=.._~~~    o   :::  ~\
@@ -1482,7 +1484,7 @@ VHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGN94
  ~~~~~~~~~~~~~~~~~~~~~~:::::: ~~~~~~~~~~~~~~~~~~~~
                          ::
 
- Envoyer par email	
+ Envoyer par email
                      xxxxx
                   xXXXXXXXXXx
                  XXXXXXXXXXXXX
@@ -1518,11 +1520,11 @@ XXXX       XXX                   XXX       XXXX
        ____XXXXXX             XXXXXX____
       /________/               \________\
 
- Envoyer par email	
+ Envoyer par email
     ________o8A888888o_
 _o888888888888K_]888888o
           ~~~+8888888888o
-              ~8888888888 
+              ~8888888888
               o88888888888
              o8888888888888
            _8888888888888888
@@ -1547,7 +1549,7 @@ _o888888888888K_]888888o
                 ~ o8=~88=~
                   ~    ~
 
- Envoyer par email	
+ Envoyer par email
                                     ("r^^^-.
                                     | `-_   ",_
                                   _-'`+-_ `--`/
@@ -1576,157 +1578,160 @@ _o888888888888K_]888888o
  /^`-..'^ `_``_`^-.                         ( / _-_ <  /  _-'
 <__  _..._--_..__- )                     __\ -_-_-.-_.-'
     ^^     ^^     ^^                      /'   ___.---'
-    
-    
-    
-    
-    .--. 
-   |o_o | 
-   |:_/ | 
-  //   \ \ 
- (|     | ) 
-/'\_   _/`\ 
-\___)=(___/ 
 
-      ,-. 
-     |66A  
-     /`'M\  
-    (|  `M\  
-   _>\   |M) 
-   '-_)=(_,' 
 
-           _._ 
-          /_ _`. 
-          (.X.)| 
-          |\_/'| 
-          )____`\ 
-         //_V _\ \ 
-        ((  |  `(_) 
-       / \> '   / \ 
-       \  \.__./  / 
-  rs/VK `-'    `-' 
 
-              a8888b.   
-             d888888b. 
-             8P"YP"Y88 
-             8|o||o|88 
-             8'    .88 
-             8`._.' Y8. 
-            d/      `8b. 
-           dP   .    Y8b. 
-          d8:'  "  `::88b 
-         d8"         'Y88b 
-        :8P    '      :888 
-         8a.   :     _a88P 
-       ._/"Yaa_:   .| 88P| 
+
+    .--.
+   |o_o |
+   |:_/ |
+  //   \ \
+ (|     | )
+/'\_   _/`\
+\___)=(___/
+
+      ,-.
+     |66A
+     /`'M\
+    (|  `M\
+   _>\   |M)
+   '-_)=(_,'
+
+           _._
+          /_ _`.
+          (.X.)|
+          |\_/'|
+          )____`\
+         //_V _\ \
+        ((  |  `(_)
+       / \> '   / \
+       \  \.__./  /
+  rs/VK `-'    `-'
+
+              a8888b.
+             d888888b.
+             8P"YP"Y88
+             8|o||o|88
+             8'    .88
+             8`._.' Y8.
+            d/      `8b.
+           dP   .    Y8b.
+          d8:'  "  `::88b
+         d8"         'Y88b
+        :8P    '      :888
+         8a.   :     _a88P
+       ._/"Yaa_:   .| 88P|
   jgs  \    YP"    `| 8P  `.
-  a:f  /     \.___.d|    .' 
-       `--..__)8888P`._.' 
+  a:f  /     \.___.d|    .'
+       `--..__)8888P`._.'
 
 
-                 .88888888:. 
-                88888888.88888. 
-              .8888888888888888. 
-              888888888888888888 
-              88' _`88'_  `88888 
-              88 88 88 88  88888 
-              88_88_::_88_:88888 
-              88:::,::,:::::8888 
-              88`:::::::::'`8888 
-             .88  `::::'    8:88. 
-            8888            `8:888. 
-          .8888'             `888888. 
-         .8888:..  .::.  ...:'8888888:. 
-        .8888.'     :'     `'::`88:88888 
-       .8888        '         `.888:8888. 
-      888:8         .           888:88888 
-    .888:88        .:           888:88888: 
-    8888888.       ::           88:888888 
-    `.::.888.      ::          .88888888 
-   .::::::.888.    ::         :::`8888'.:. 
-  ::::::::::.888   '         .:::::::::::: 
-  ::::::::::::.8    '      .:8::::::::::::. 
- .::::::::::::::.        .:888::::::::::::: 
- :::::::::::::::88:.__..:88888:::::::::::' 
-  `'.:::::::::::88888888888.88:::::::::' 
-        `':::_:' -- '' -'-' `':_::::'` 
+                 .88888888:.
+                88888888.88888.
+              .8888888888888888.
+              888888888888888888
+              88' _`88'_  `88888
+              88 88 88 88  88888
+              88_88_::_88_:88888
+              88:::,::,:::::8888
+              88`:::::::::'`8888
+             .88  `::::'    8:88.
+            8888            `8:888.
+          .8888'             `888888.
+         .8888:..  .::.  ...:'8888888:.
+        .8888.'     :'     `'::`88:88888
+       .8888        '         `.888:8888.
+      888:8         .           888:88888
+    .888:88        .:           888:88888:
+    8888888.       ::           88:888888
+    `.::.888.      ::          .88888888
+   .::::::.888.    ::         :::`8888'.:.
+  ::::::::::.888   '         .::::::::::::
+  ::::::::::::.8    '      .:8::::::::::::.
+ .::::::::::::::.        .:888:::::::::::::
+ :::::::::::::::88:.__..:88888:::::::::::'
+  `'.:::::::::::88888888888.88:::::::::'
+        `':::_:' -- '' -'-' `':_::::'`
 
 
 
-                                .:xxxxxxxx:. 
-                             .xxxxxxxxxxxxxxxx. 
-                            :xxxxxxxxxxxxxxxxxxx:. 
-                           .xxxxxxxxxxxxxxxxxxxxxxx: 
-                          :xxxxxxxxxxxxxxxxxxxxxxxxx: 
-                          xxxxxxxxxxxxxxxxxxxxxxxxxxX: 
-                          xxx:::xxxxxxxx::::xxxxxxxxx: 
-                         .xx:   ::xxxxx:     :xxxxxxxx 
-                         :xx  x.  xxxx:  xx.  xxxxxxxx 
-                         :xx xxx  xxxx: xxxx  :xxxxxxx 
-                         'xx 'xx  xxxx:. xx'  xxxxxxxx 
-                          xx ::::::xx:::::.   xxxxxxxx 
-                          xx:::::.::::.:::::::xxxxxxxx 
-                          :x'::::'::::':::::':xxxxxxxxx. 
-                          :xx.::::::::::::'   xxxxxxxxxx 
-                          :xx: '::::::::'     :xxxxxxxxxx. 
-                         .xx     '::::'        'xxxxxxxxxx. 
-                       .xxxx                     'xxxxxxxxx. 
-                     .xxxx                         'xxxxxxxxx. 
-                   .xxxxx:                          xxxxxxxxxx. 
-                  .xxxxx:'                          xxxxxxxxxxx. 
-                 .xxxxxx:::.           .       ..:::_xxxxxxxxxxx:. 
-                .xxxxxxx''      ':::''            ''::xxxxxxxxxxxx. 
-                xxxxxx            :                  '::xxxxxxxxxxxx 
-               :xxxx:'            :                    'xxxxxxxxxxxx: 
-              .xxxxx              :                     ::xxxxxxxxxxxx 
-              xxxx:'                                    ::xxxxxxxxxxxx 
-              xxxx               .                      ::xxxxxxxxxxxx. 
-          .:xxxxxx               :                      ::xxxxxxxxxxxx:: 
-          xxxxxxxx               :                      ::xxxxxxxxxxxxx: 
-          xxxxxxxx               :                      ::xxxxxxxxxxxxx: 
-          ':xxxxxx               '                      ::xxxxxxxxxxxx:' 
-            .:. xx:.                                   .:xxxxxxxxxxxxx' 
-          ::::::.'xx:.            :                  .:: xxxxxxxxxxx': 
-  .:::::::::::::::.'xxxx.                            ::::'xxxxxxxx':::. 
-  ::::::::::::::::::.'xxxxx                          :::::.'.xx.'::::::. 
-  ::::::::::::::::::::.'xxxx:.                       :::::::.'':::::::::   
-  ':::::::::::::::::::::.'xx:'                     .'::::::::::::::::::::.. 
-    :::::::::::::::::::::.'xx                    .:: ::::::::::::::::::::::: 
-  .:::::::::::::::::::::::. xx               .::xxxx ::::::::::::::::::::::: 
-  :::::::::::::::::::::::::.'xxx..        .::xxxxxxx ::::::::::::::::::::' 
-  '::::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::::' 
-    '::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::' 
-        ':::::::::::::::::::_xxxxxx::'''::xxxxxxxxxx '::::::::::::' 
-             '':.::::::::::'                        `._'::::::'' 
+                                .:xxxxxxxx:.
+                             .xxxxxxxxxxxxxxxx.
+                            :xxxxxxxxxxxxxxxxxxx:.
+                           .xxxxxxxxxxxxxxxxxxxxxxx:
+                          :xxxxxxxxxxxxxxxxxxxxxxxxx:
+                          xxxxxxxxxxxxxxxxxxxxxxxxxxX:
+                          xxx:::xxxxxxxx::::xxxxxxxxx:
+                         .xx:   ::xxxxx:     :xxxxxxxx
+                         :xx  x.  xxxx:  xx.  xxxxxxxx
+                         :xx xxx  xxxx: xxxx  :xxxxxxx
+                         'xx 'xx  xxxx:. xx'  xxxxxxxx
+                          xx ::::::xx:::::.   xxxxxxxx
+                          xx:::::.::::.:::::::xxxxxxxx
+                          :x'::::'::::':::::':xxxxxxxxx.
+                          :xx.::::::::::::'   xxxxxxxxxx
+                          :xx: '::::::::'     :xxxxxxxxxx.
+                         .xx     '::::'        'xxxxxxxxxx.
+                       .xxxx                     'xxxxxxxxx.
+                     .xxxx                         'xxxxxxxxx.
+                   .xxxxx:                          xxxxxxxxxx.
+                  .xxxxx:'                          xxxxxxxxxxx.
+                 .xxxxxx:::.           .       ..:::_xxxxxxxxxxx:.
+                .xxxxxxx''      ':::''            ''::xxxxxxxxxxxx.
+                xxxxxx            :                  '::xxxxxxxxxxxx
+               :xxxx:'            :                    'xxxxxxxxxxxx:
+              .xxxxx              :                     ::xxxxxxxxxxxx
+              xxxx:'                                    ::xxxxxxxxxxxx
+              xxxx               .                      ::xxxxxxxxxxxx.
+          .:xxxxxx               :                      ::xxxxxxxxxxxx::
+          xxxxxxxx               :                      ::xxxxxxxxxxxxx:
+          xxxxxxxx               :                      ::xxxxxxxxxxxxx:
+          ':xxxxxx               '                      ::xxxxxxxxxxxx:'
+            .:. xx:.                                   .:xxxxxxxxxxxxx'
+          ::::::.'xx:.            :                  .:: xxxxxxxxxxx':
+  .:::::::::::::::.'xxxx.                            ::::'xxxxxxxx':::.
+  ::::::::::::::::::.'xxxxx                          :::::.'.xx.'::::::.
+  ::::::::::::::::::::.'xxxx:.                       :::::::.'':::::::::
+  ':::::::::::::::::::::.'xx:'                     .'::::::::::::::::::::..
+    :::::::::::::::::::::.'xx                    .:: :::::::::::::::::::::::
+  .:::::::::::::::::::::::. xx               .::xxxx :::::::::::::::::::::::
+  :::::::::::::::::::::::::.'xxx..        .::xxxxxxx ::::::::::::::::::::'
+  '::::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::::'
+    '::::::::::::::::::::::: xxxxxxxxxxxxxxxxxxxxxxx :::::::::::::::'
+        ':::::::::::::::::::_xxxxxx::'''::xxxxxxxxxx '::::::::::::'
+             '':.::::::::::'                        `._'::::::''
 
 
-               ___ 
-            ,-'   '-. 
-           /  _   _  \ 
-           | (o)_(o) | 
-           \ .-""-.  / 
-           //`._.-'`\\ 
-          //   :    ; \ 
-         //. - '' -.|  | 
-        /:    :     |  | 
-       | |   :     ,/  /, 
-jgs  _;'`-, '     |`.-' `\ 
-     )     `\.___./;     .' 
-     '.__    )----'\__.-' 
-         `""` 
+               ___
+            ,-'   '-.
+           /  _   _  \
+           | (o)_(o) |
+           \ .-""-.  /
+           //`._.-'`\\
+          //   :    ; \
+         //. - '' -.|  |
+        /:    :     |  |
+       | |   :     ,/  /,
+jgs  _;'`-, '     |`.-' `\
+     )     `\.___./;     .'
+     '.__    )----'\__.-'
+         `""`
 
-                ___ 
-             ,-'   '-. 
-            /  _   _  \ 
-            | (o)_(o) | 
-            \ .-""-.  / 
-            //`._.-'`\\ 
-           //   :    ; \ 
-          //. - '' -.|  | 
-         /(    :     |  | 
-        |  \__:     ,/  /, 
-  jgs  _;'`,_/'     |`.-' `\ 
-      )     `\.___./;     .' 
-      '.__    )----'\__.-' 
-          `""` 
+                ___
+             ,-'   '-.
+            /  _   _  \
+            | (o)_(o) |
+            \ .-""-.  /
+            //`._.-'`\\
+           //   :    ; \
+          //. - '' -.|  |
+         /(    :     |  |
+        |  \__:     ,/  /,
+  jgs  _;'`,_/'     |`.-' `\
+      )     `\.___./;     .'
+      '.__    )----'\__.-'
+          `""`
+
+
+```
 
