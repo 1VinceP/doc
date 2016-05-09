@@ -12,18 +12,23 @@ After that, you can always take backups and/or snapshots. I believe backups are 
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and restart forever and NGINX
 * If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
 
+--------
+
 ## SSH
+
 * First check to see if you already have a public key. `ls ~/.ssh`
 * If you see a file that ends in `pub` (`id_rsa.pub` or `id_dsa.pub`), you're good; skip to the next section. If not:
 * `ssh-keygen -t rsa -C "your@email.com"` (substituting your own email, obviously).
 * This will be a short interactive process. You can decide whether or not you'll want a passphrase.
 * After this, `cat ~/.ssh/id_rsa.pub` and copy that (on Linux, `cat ~/.ssh/id_rsa.pub | xclip -selection clipboard`).
-  * You'll want the entire thing, starting with `ssh-rsa` and ending with `you@email.com`
+  * You'll want the entire thing, starting with `ssh-rsa` and ending with `your@email.com`
 * Additional guides:
   * [for mac/linux/bsd/unix/sunos/solaris users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
   * [for windows users](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
 
 --------
+
+## Digital Ocean
 
 * [Sign Up at DigitalOcean](https://m.do.co/c/1acfec6c9a6d)
   * This is a referral link. (You get $10 credit, I get $25 credit when you spend $25. Everyone wins!)
@@ -32,6 +37,8 @@ After that, you can always take backups and/or snapshots. I believe backups are 
 * Go with the $5 option.
 * Pick a location (my droplets are on NY2, but it really doesn't matter unless you're serving something huge).
 * Create it! Add your ssh keys. If you don't have ssh keys set up yet, go back to the first section.
+  * Just paste the whole thing (starting with `ssh-rsa` and ending with `your@email.com`) in the textarea you see when
+    you click `SSH Keys > Add SSH Key`.
 * Then `ssh root@dropletIPaddress`.
 * Update `/etc/apt/sources.list` and `/etc/apt/sources.list.d`.
   * Break them out however you like. my total list is at the bottom of this file.
@@ -44,6 +51,9 @@ After that, you can always take backups and/or snapshots. I believe backups are 
 * I like to copy over my configs, which i keep [in a repo on github](https://github.com/zacanger/z),
   so it's as easy as cloning that repo down. Then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
 * You may want to add a non-root user. That's up to you and/or your team. That'd be `adduser username groupname`.
+  * If you do this, do some research first on managing user permissions on Linux! At the very least you'll want to add
+    that user to sudoers, set things up so you can SSH in as that user, and probably do something like (as root, or with sudo)
+    `chown -R username /usr/local`.
 * `npm i -g n ; n latest ; npm i -g npm` to get the latest node and npm
 * Then install any other global node modules you might need. I recommend `npm i -g`ing these:
   * `forever` and `pm2` serve the same purpose: keeping your Node apps running.
@@ -68,6 +78,9 @@ After that, you can always take backups and/or snapshots. I believe backups are 
 * Once your projects are cloned, `cd` into them and run `npm i` to get all the packages you've saved as dependencies.
 * Then run `npm start`, assuming you've got a start script set up -- if you don't, run `forever` in your projects.
   * `forever start -a -l f.log -o o.log -e e.log index.js`
+  * To monitor things with forever, you can use commands like `forever list`, `forever restartall`, `forever restart 0`
+    (where `0` is the index of that project, which `forever list` will tell you), and more; just type in `forever` to
+    get usage details.
 * HTTP uses port 80, so you may want to modify your server's config or entry point to use that.
   * It's a good idea to allow for `process.env.PORT` in your code rather than hardcoding a port number.
   * You'll probably end up running more than one app on your droplet. See the NGINX section below for info on that.
@@ -124,12 +137,15 @@ swapon /swapfile
 ## Domains
 
 * You'll need to configure your domain provider to point to DigitalOcean.
-  * How you do this will depend on where you got your domain name(s). See their docs.
+  * How you do this will depend on where you got your domain name(s).
+  * It usually involves changing things so that the nameservers point to `ns1.digitalocean.com`, `ns2.digitalocean.com`,
+    and `ns3.digitalocean.com`.
 * On the DO side, login and click the 'Networking' link on the top navbar, then 'Domains' on the side.
 * Add your domain name and your droplet's IP address.
 * You'll need an A-record that looks like `A | @ | 123.456.789.0` (your IP address there).
 * Make a CNAME like `CNAME | * | yourdomain.com.` (note the dot at the end).
 * You should have nameservers set up something like `NS | ns1.digitalocean.com.`
+* You can use a tool like `dig(1)` or [What's My DNS](https://www.whatsmydns.net/) to check if things are working.
 * To set up subdomains:
   * Add an A-record like `A | sub | 123.456.789.0`
   * Add a CNAME like `CNAME | *.sub | sub.yourdomain.com.`
