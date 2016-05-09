@@ -11,7 +11,15 @@ After that, you can always take backups and/or snapshots. I believe backups are 
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update.sh) will update your box
   * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and restart forever and NGINX
 * If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
-* Setting up ssh:
+
+## SSH
+* First check to see if you already have a public key. `ls ~/.ssh`
+* If you see a file that ends in `pub` (`id_rsa.pub` or `id_dsa.pub`), you're good; skip to the next section. If not:
+* `ssh-keygen -t rsa -C "your@email.com"` (substituting your own email, obviously).
+* This will be a short interactive process. You can decide whether or not you'll want a passphrase.
+* After this, `cat ~/.ssh/id_rsa.pub` and copy that (on Linux, `cat ~/.ssh/id_rsa.pub | xclip -selection clipboard`).
+  * You'll want the entire thing, starting with `ssh-rsa` and ending with `you@email.com`
+* Additional guides:
   * [for mac/linux/bsd/unix/sunos/solaris users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
   * [for windows users](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)
 
@@ -23,7 +31,7 @@ After that, you can always take backups and/or snapshots. I believe backups are 
 * Select the MEAN-stack droplet (on Ubuntu).
 * Go with the $5 option.
 * Pick a location (my droplets are on NY2, but it really doesn't matter unless you're serving something huge).
-* Create it! Add your ssh keys. If you don't have ssh keys set up yet, do that first.
+* Create it! Add your ssh keys. If you don't have ssh keys set up yet, go back to the first section.
 * Then `ssh root@dropletIPaddress`.
 * Update `/etc/apt/sources.list` and `/etc/apt/sources.list.d`.
   * Break them out however you like. my total list is at the bottom of this file.
