@@ -243,13 +243,13 @@ help.
 
 This is presented as a giant block of code, with questions as comments, and potential answers below them.
 
-```
+```javascript
 // Are you excited? Still planning on attending?
-(Yes, yes.)
+// (Yes, yes.)
 
 // How're you doing on the prep work? Anything you've had
 // trouble with? Anything you've been avoiding?
-(It's all done, I'm okay, not sure about object syntax, etc....)
+// (It's all done, I'm okay, not sure about object syntax, etc....)
 
 ///////////////////////////////////
 // THE ACTUAL CODE INTERVIEW BIT //
@@ -273,33 +273,36 @@ var obj = {
 }
 
 // What is an operator? Can you show what some of them are?
-+ - * / % = >= <= == === != !== || ! &&
+// + - * / % = >= <= == === != !== || ! &&
 
 // What kinds of operators are there?
-(expected: arithmetic, comparison, logical (&&, ||, !), assignment;
-bonus: typeof, bitwise (& | ^ ~ << >> >>>),
-ternary (conditional) (if this is true ? do this : otherwise do this)
+// (expected: arithmetic, comparison, logical (&&, ||, !), assignment;
+// bonus: typeof, bitwise (& | ^ ~ << >> >>>),
+// ternary (conditional) (if this is true ? do this : otherwise do this)
 
 // What do truthy and falsey mean? Any examples?
-truthiness and falsiness describe how something might be evaluated. for example:
+// truthiness and falsiness describe how something might be evaluated. for example:
 if (2) {
   return true
 }
-returns 'true,' because all non-falsey values are true.
+// returns 'true,' because all non-falsey values are true.
 
 // What are the falsey values?
-false, 0 NaN, null, undefined, and '' (empty string)
+// false, 0 NaN, null, undefined, and '' (empty string)
 
 // What is a function?
-A function is a piece of code that performs a task (routine, operation, procedure).
+// A function is a piece of code that performs a task (routine, operation, procedure).
 
 // How is that different from a method?
-A method is a function on an object.
+// A method is a function on an object.
 
 // How does one declare a function?
-function declaration: function someFunc(){}
-or, with a function operator: var someFunc = function(){}
-or: const fn = () => 'foo'
+// function declaration
+function someFunc(){}
+// or, with a function operator:
+var someFunc = function(){}
+// or:
+const fn = () => 'foo'
 
 // How does one invoke a function?
 someFunc()
