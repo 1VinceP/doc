@@ -540,3 +540,4 @@ git diff --name-status TAG2 TAG1 | wc -l      # count modified files
   path = path-of-submodule
   url = http://url.of/submodule.git
 ```
+
