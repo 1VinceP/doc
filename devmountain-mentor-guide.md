@@ -227,7 +227,7 @@ help.
   * And to make things easier in the future: `sudo chown -R username /usr/local/` (no more need to `sudo` everything).
 * [ ] Mac users: get Homebrew.
   * `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-* [ ] Does this student have an editor? No, Notepad is not an editor.
+* [ ] Does this student have an editor? No, Notepad is not an editor. _Neither is the Mac Notes app._
   * Possible options:
     * <https://www.sublimetext.com/>
     * <http://atom.io/>
