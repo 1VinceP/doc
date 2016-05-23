@@ -1,0 +1,28 @@
+{
+  "name": "zacanger-doc",
+  "version": "0.1.0",
+  "description": "docs",
+  "main": "README.md",
+  "scripts": {
+    "test": "./check.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacanger/doc.git"
+  },
+  "keywords": [
+    "doc"
+  ],
+  "author": {
+    "name": "Zac Anger",
+    "email": "zac@zacanger.com",
+    "url": "http://zacanger.com"
+  },
+  "homepage": "https://github.com/zacanger/doc#readme",
+  "bugs": "https://github.com/zacanger/doc/issues",
+  "license": "WTFPL",
+  "dependencies": {
+    "alex": "^3.0.0"
+  },
+  "devDependencies": {}
+}
