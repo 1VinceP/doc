@@ -181,8 +181,7 @@ request and response.
 
 #### Books
 - [Node.js in Action, Second Edition](https://www.manning.com/books/node-js-in-action-second-edition)
-  FIXMIE
-https://www.google.com/search?q=nodejs+the+right+way&oq=nodejs+the+right+way&aqs=chrome..69i57.1553j0j7&sourceid=chrome&ie=UTF-8
+- [Node.js The Right Way](https://pragprog.com/book/jwnode/node-js-the-right-way)
 
 #### Testing & Debugging Node
 - [TEN TIPS FOR CODING WITH NODE.JS #1: DEVELOP DEBUGGING TECHNIQUES](http://www.nearform.com/nodecrunch/node-js-develop-debugging-techniques/)
