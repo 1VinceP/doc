@@ -223,6 +223,7 @@ help.
   * (They could also use `nvm` instead of `n`).
   * If they're on Windows and installed it with any third-party app, tell them to uninstall it and go to:
     * https://nodejs.org/en/download/
+    * They could then use [nodist](https://github.com/marcelklehr/nodist) or [nvwm](https://github.com/hakobera/nvmw).
   * If, for whatever reason, they need more options: https://gist.github.com/isaacs/579814
   * And to make things easier in the future: `sudo chown -R username /usr/local/` (no more need to `sudo` everything).
 * [ ] Mac users: get Homebrew.
