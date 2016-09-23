@@ -78,6 +78,15 @@ After that, you can always take backups and/or snapshots. I believe backups are 
 * Once your projects are cloned, `cd` into them and run `npm i` to get all the packages you've saved as dependencies.
 * Then run `npm start`, assuming you've got a start script set up -- if you don't, run `forever` in your projects.
   * `forever start -a -l f.log -o o.log -e e.log index.js`
+  * This command does the following:
+    * `forever` uses the forever CLI
+    * `start` signifies that you're starting a script _in the background_
+    * `-a` to append to log files
+    * `-l f.log` to send logs to a file called `f.log`
+    * `-o o.log` to send `stdout` to `o.log`
+    * `-e e.log` to send `stderr` to `e.log`
+      * If things aren't working and you don't know why, _check this file_
+    * `index.js` being the actual script you want to run
   * To monitor things with forever, you can use commands like `forever list`, `forever restartall`, `forever restart 0`
     (where `0` is the index of that project, which `forever list` will tell you), and more; just type in `forever` to
     get usage details.
