@@ -352,4 +352,4 @@ deb http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
 # deb-src http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
 ```
 
-For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/source.more.list).
+For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/sources.more.list).
