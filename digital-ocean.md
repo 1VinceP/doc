@@ -297,33 +297,35 @@ deb-src http://mirrors.digitalocean.com/ubuntu xenial-updates main restricted un
 # non-free packages/from canonical's partners
 deb http://archive.canonical.com/ubuntu xenial partner
 deb-src http://archive.canonical.com/ubuntu xenial partner
-
-# debian sid (unstable) is ubuntu's upstream. it'll hit here, first.
-deb http://ftp.us.debian.org/debian sid main non-free contrib
-deb-src http://ftp.us.debian.org/debian sid main non-free contrib
-
-# some stuff never makes it to sid, or makes it there very slowly.
-deb http://ftp.us.debian.org/debian experimental main non-free contrib
-deb-src http://ftp.us.debian.org/debian experimental main non-free contrib
 ```
 
 `/etc/apt/sources.list.d/extras.list`:
 
 ```
-# bbqtools-basic & bbq-tools; also check github (really awesome extra tools for things)
+deb http://httpredir.debian.org/debian sid main contrib non-free
+deb-src http://httpredir.debian.org/debian sid main contrib non-free
+deb http://httpredir.debian.org/debian expermiental contrib non-free
+deb-src http://httpredir.debian.org/debian experimental main contrib non-free
+
+# bbqtools-basic & bbq-tools; also check github
 deb http://linuxbbq.org/repos/apt/debian sid main
 
-# Debian Multimedia... switch with another mirror if this goes down (happens frequently)
+# Debian Multimedia... switch with one of the others if it goes down
 deb http://mirror.optus.net/deb-multimedia/ unstable main non-free
 deb-src http://mirror.optus.net/deb-multimedia/ unstable main non-free
 
-# @paultags, has some useful stuff
-deb https://pault.ag/debian wicked main
-deb-src https://pault.ag/debian wicked main
+# apt-build threw a bitch-fit so i put this here.
+deb [trusted=yes] file:/var/cache/apt-build/repository apt-build main
 
-# php stuff. jessie is the newest dist they have
+# php stuff. jessie is the newest dist
 deb http://packages.dotdeb.org/ jessie all
-deb-src http://packages.dotdeb.org/ jessie all
+# deb-src http://packages.dotdeb.org/ jessie all
+
+# might as well be ~/ at this point
+deb [arch=i386,amd64] http://linux.dropbox.com/debian sid main
+
+# sil tools and unicode typefaces
+deb http://packages.sil.org/ubuntu xenial main
 
 # rethinkdb
 deb http://download.rethinkdb.com/apt stretch main
@@ -348,8 +350,6 @@ deb http://download.fpcomplete.com/debian jessie main
 # golang
 deb http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
 # deb-src http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
-
 ```
 
-For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/the.list).
-
+For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/source.more.list).
