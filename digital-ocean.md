@@ -4,6 +4,7 @@ This is a guide primarily written for DevMountain students. Its focus is on sett
 to run a Node (or MEAN-stack) app.
 This process is moderately time-consuming. Expect to spend an hour or so the first time you do this.
 After that, you can always take backups and/or snapshots. I believe backups are $1 a month from DO.
+Many of these steps can apply to other VPS services (Amazon Lightsail, etc.).
 
 * I have three scripts that may be helpful:
   * [this one is incomplete](https://github.com/zacanger/z/blob/master/bin/sh/do-new.sh) but it contains
