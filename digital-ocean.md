@@ -219,6 +219,8 @@ server {
 }
 ```
 
+## Full NGINX Example
+
 * Here's a full, working example of `/etc/nginx/sites-enabled/default`
 
 ```
