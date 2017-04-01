@@ -959,3 +959,477 @@
 * minibuffer-local-must-match-map is used for strict completion and cautious completion
 * (put 'delete-region 'disabled t) disables the delete-region command
 * (modify-syntax-entry ?\$ "." text-mode-syntax-table) makes dollar sign a punctuation character in text mode
+
+## Example Emacs Config
+
+```lisp
+; Make `C-w` kill the current line when the mark is not active.
+(defadvice kill-region (before slick-cut activate compile)
+  (interactive
+   (if mark-active
+       (list (region-beginning) (region-end))
+     (list (line-beginning-position) (line-beginning-position 2)))))
+
+; Make `M-w` copy the current line when the mark is not active.
+(defadvice kill-ring-save (before slick-copy activate compile)
+  (interactive
+   (if mark-active
+       (list (region-beginning) (region-end))
+     (list (line-beginning-position) (line-beginning-position 2)))))
+
+(defun save-and-browse-url-of-buffer ()
+  (interactive)
+  (if (buffer-modified-p) (save-buffer))
+  (browse-url-of-buffer))
+
+(global-set-key (kbd "s-O") 'save-and-browse-url-of-buffer)
+
+(defun rm ()
+  (interactive)
+  (let ((filename (buffer-file-name))
+        (buffer (current-buffer))
+        (name (buffer-name)))
+    (if (not (and filename (file-exists-p filename)))
+        (error "Buffer '%s' is not visiting a file!" name)
+      (set-buffer-modified-p nil)
+      (kill-buffer buffer)
+      (delete-file filename))))
+
+(global-set-key (kbd "<H-backspace>") 'rm)
+
+(defun toggle-comment ()
+  (interactive)
+  (save-excursion
+    (let (beg end)
+      (if (region-active-p)
+          (progn
+            (setq beg (region-beginning) end (region-end))
+            (goto-char beg)
+            (setq beg (line-beginning-position))
+            (goto-char end)
+            (if (bolp) (backward-char))
+            (setq end (line-end-position)))
+        (setq beg (line-beginning-position) end (line-end-position)))
+      (comment-or-uncomment-region beg end))))
+
+(defun comment-paragraph ()
+  (interactive)
+  (save-excursion
+    (mark-paragraph)
+    (toggle-comment)))
+
+(global-set-key (kbd "M-;") 'toggle-comment)
+(global-set-key (kbd "M-'") 'comment-paragraph)
+
+(defun unfill-paragraph ()
+  (interactive)
+  (let ((fill-column (point-max)))
+    (fill-paragraph nil)))
+
+(global-set-key (kbd "M-Q") 'unfill-paragraph)
+
+(defun yank-and-mark ()
+  (interactive)
+  (let ((deactivate-mark nil))
+    (yank)
+    (exchange-point-and-mark)))
+
+(global-set-key (kbd "C-z") 'yank-and-mark)
+
+(defun yank-and-indent ()
+  (interactive)
+  (yank)
+  (call-interactively 'indent-region))
+
+(global-set-key (kbd "H-y") 'yank-and-indent)
+
+(defun kill-first-page ()
+  (interactive)
+  (beginning-of-buffer)
+  (scroll-up-command)
+  (kill-region 1 (point)))
+
+(global-set-key (kbd "H-v") 'kill-first-page)
+
+(defun duplicate-line (&optional n)
+  (interactive "*p")
+  (let ((use-region (use-region-p)))
+    (save-excursion
+      (let ((text (if use-region
+                      (buffer-substring (region-beginning) (region-end))
+                    (prog1 (thing-at-point 'line)
+                      (end-of-line)
+                      (if (< 0 (forward-line 1))
+                          (newline))))))
+        (dotimes (i (abs (or n 1)))
+          (insert text))))
+    (if use-region nil
+      (let ((pos (- (point) (line-beginning-position))))
+        (if (> 0 n)
+            (comment-region (line-beginning-position) (line-end-position)))
+        (forward-line 1)
+        (forward-char pos)))))
+
+(global-set-key (kbd "H-d") 'duplicate-line)
+
+(defun shift-region (x)
+  (interactive)
+  (let (beg end deactivate-mark)
+    (if (region-active-p)
+        (progn
+          (setq beg (region-beginning) end (region-end))
+          (save-excursion
+            (setq beg (progn (goto-char beg) (line-beginning-position))
+                  end (progn (goto-char end) (line-end-position)))))
+      (setq beg (line-beginning-position)
+            end (line-end-position)))
+    (indent-rigidly beg end x)))
+
+(global-set-key (kbd "s-u") (lambda () (interactive) (shift-region -2)))
+(global-set-key (kbd "s-y") (lambda () (interactive) (shift-region 2)))
+(global-set-key (kbd "s-U") (lambda () (interactive) (shift-region -1)))
+(global-set-key (kbd "s-Y") (lambda () (interactive) (shift-region 1)))
+
+(defun kill-whole-paragraph ()
+  (interactive)
+  (mark-paragraph)
+  (kill-region (region-beginning) (region-end)))
+
+(defun copy-whole-paragraph ()
+  (interactive)
+  (save-excursion
+    (mark-paragraph)
+    (kill-ring-save (region-beginning) (region-end))))
+
+(global-set-key (kbd "H-w") 'kill-whole-paragraph)
+(global-set-key (kbd "H-h") 'copy-whole-paragraph)
+
+; This is like `M-x erase-buffer` but this adds contents of the buffer
+; to the kill ring.
+(defun kill-whole-buffer ()
+  (interactive)
+  (kill-region (point-min) (point-max)))
+
+(defun copy-whole-buffer ()
+  (interactive)
+  (kill-ring-save (point-min) (point-max)))
+
+(global-set-key (kbd "H-u") 'kill-whole-buffer)
+(global-set-key (kbd "H-b") 'copy-whole-buffer)
+
+(defun copy-word ()
+  (interactive)
+  (let ((bounds (bounds-of-thing-at-point 'word)))
+    (copy-region-as-kill (car bounds) (cdr bounds))))
+
+(global-set-key (kbd "H-g") 'copy-word)
+
+(defun shell-command-replace ()
+  (interactive)
+  (let ((cmd (read-from-minibuffer "" nil nil nil 'shell-command-history))
+        (p (if mark-active (region-beginning) 0))
+        (m (if mark-active (region-end) 0)))
+    (if (= p m)
+        (shell-command cmd)
+      (shell-command-on-region p m cmd t t))))
+
+(defun shell-command-insert ()
+  (interactive)
+  (let ((cmd (read-from-minibuffer "" nil nil nil 'shell-command-history))
+        (p (if mark-active (region-beginning) 0))
+        (m (if mark-active (region-end) 0)))
+    (if (= p m)
+        (shell-command cmd t)
+      (shell-command-on-region p m cmd))))
+
+(global-set-key (kbd "M-r") 'shell-command-replace)
+(global-set-key (kbd "M-i") 'shell-command-insert)
+
+(defun mark-line ()
+  (interactive)
+  (let (beg end)
+    (if (region-active-p)
+        (progn
+          (setq beg (region-beginning) end (region-end))
+          (save-excursion
+            (setq beg (progn (goto-char beg) (line-beginning-position))
+                  end (progn (goto-char end) (line-end-position)))))
+      (setq beg (line-beginning-position)
+            end (line-end-position)))
+    (goto-char end)
+    (set-mark beg)))
+
+(global-set-key (kbd "C-l") 'mark-line)
+
+(defun my-newline-and-indent ()
+  (interactive)
+  (if (and (eolp) (bolp)) (newline) (newline-and-indent)))
+
+(global-set-key (kbd "<RET>") 'my-newline-and-indent)
+
+(defun open-line-above ()
+  (interactive)
+  (beginning-of-line)
+  (newline)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(defun open-line-below ()
+  (interactive)
+  (end-of-line)
+  (newline-and-indent))
+
+(defun open-line-above-without-indentation ()
+  (interactive)
+  (beginning-of-line)
+  (newline)
+  (forward-line -1))
+
+(defun open-line-below-without-indentation ()
+  (interactive)
+  (end-of-line)
+  (newline))
+
+(global-set-key (kbd "<S-return>") 'open-line-above)
+(global-set-key (kbd "<s-return>") 'open-line-below)
+(global-set-key (kbd "<C-return>") 'open-line-above-without-indentation)
+(global-set-key (kbd "<M-return>") 'open-line-below-without-indentation)
+
+(defun kill-to-indentation ()
+  (interactive)
+  (let ((end (point)))
+    (back-to-indentation)
+    (kill-region (point) end)))
+
+(global-set-key (kbd "<C-backspace>") 'kill-to-indentation)
+
+(defun kill-to-beginning-of-buffer ()
+  (interactive)
+  (kill-region (point-min) (point)))
+
+(defun kill-to-end-of-buffer ()
+  (interactive)
+  (kill-region (point) (point-max)))
+
+(global-set-key (kbd "H-,") 'kill-to-beginning-of-buffer)
+(global-set-key (kbd "H-.") 'kill-to-end-of-buffer)
+
+(defun copy-to-beginning-of-line ()
+  (interactive)
+  (kill-ring-save (line-beginning-position) (point)))
+
+(defun copy-to-end-of-line ()
+  (interactive)
+  (kill-ring-save (point) (line-end-position)))
+
+(global-set-key (kbd "H-a") 'copy-to-beginning-of-line)
+(global-set-key (kbd "H-e") 'copy-to-end-of-line)
+
+(defun delete-indentation-and-spaces ()
+  (interactive)
+  (delete-indentation)
+  (delete-horizontal-space))
+
+(global-set-key (kbd "s-6") 'delete-indentation-and-spaces)
+
+(defun save-and-kill-this-buffer ()
+  (interactive)
+  (if (and (buffer-modified-p) (not buffer-read-only) (buffer-file-name)) (save-buffer))
+  (kill-this-buffer))
+
+(global-set-key (kbd "s-w") 'save-and-kill-this-buffer)
+
+(defun copy-lines-without-newline ()
+  (interactive)
+  (let (beg end)
+    (if (region-active-p)
+        (progn
+          (setq beg (region-beginning) end (region-end))
+          (save-excursion
+            (setq beg (progn (goto-char beg) (line-beginning-position))
+                  end (progn (goto-char end) (line-end-position)))))
+      (setq beg (line-beginning-position)
+            end (line-end-position)))
+    (clipboard-kill-ring-save beg end)))
+
+(defun kill-lines-without-newline ()
+  (interactive)
+  (let (beg end)
+    (if (region-active-p)
+        (progn
+          (setq beg (region-beginning) end (region-end))
+          (save-excursion
+            (setq beg (progn (goto-char beg) (line-beginning-position))
+                  end (progn (goto-char end) (line-end-position)))))
+      (setq beg (line-beginning-position)
+            end (line-end-position)))
+    (kill-region beg end)))
+
+(global-set-key (kbd "H-m") 'copy-lines-without-newline)
+(global-set-key (kbd "H-q") 'kill-lines-without-newline)
+
+(defun reverse-zap-to-char (x) "" (interactive "*cZap to char: ")
+  (let ((case-fold-search nil))
+    (kill-region (point) (progn (search-backward (char-to-string x)) (point)))))
+
+(defun exclusive-zap-to-char (x) "" (interactive "*cZap to char: ")
+  (let ((case-fold-search nil))
+    (kill-region (point) (progn (search-forward (char-to-string x)) (backward-char) (point)))))
+
+(defun exclusive-reverse-zap-to-char (x) "" (interactive "*cZap to char: ")
+  (let ((case-fold-search nil))
+    (kill-region (point) (progn (search-backward (char-to-string x)) (forward-char) (point)))))
+
+(global-set-key (kbd "s-z") 'reverse-zap-to-char)
+(global-set-key (kbd "H-x") 'exclusive-zap-to-char)
+(global-set-key (kbd "H-z") 'exclusive-reverse-zap-to-char)
+
+(global-set-key (kbd "H-f") (lambda () (interactive) (ido-find-file-in-dir "~/")))
+(global-set-key (kbd "H-n") (lambda () (interactive) (ido-find-file-in-dir "~/n")))
+
+(global-font-lock-mode 0)
+
+(global-set-key (kbd "<s-backspace>") (lambda () (interactive) (kill-line -0)))
+
+; Exchange the point and mark, deactivate the mark if it is active,
+; and do not reactivate it if it is not.
+(global-set-key (kbd "s-x") (lambda () (interactive) (exchange-point-and-mark t)))
+
+(global-set-key (kbd "<s-up>") (lambda () (interactive) (scroll-down 8)))
+(global-set-key (kbd "<s-down>") (lambda () (interactive) (scroll-up 8)))
+
+; Make for example `C-h o coreutils RET` open the coreutils Info page.
+(global-set-key (kbd "C-h o") 'info-display-manual)
+
+; Make `C-h e search-phrase RET` like `C-h i g (elisp) RET i search-phrase RET`.
+(global-set-key (kbd "C-h e") 'elisp-index-search)
+
+; Append the contents of the region to a file.
+(global-set-key (kbd "H-2") 'append-to-file)
+
+(global-set-key (kbd "s-~") (lambda () (interactive) (find-file "~/.emacs.d/custom-theme.el")))
+(global-set-key (kbd "H-`") (lambda () (interactive) (custom-theme-visit-theme 'custom)))
+(global-set-key (kbd "s-`") (lambda () (interactive) (save-some-buffers t) (load-file "~/.emacs.d/custom-theme.el")))
+
+(global-set-key (kbd "H-9") (lambda() (interactive) (switch-to-buffer "*interpretation*")))
+(global-set-key (kbd "s-K") 'kill-compilation)
+(global-set-key (kbd "s-I") (lambda () (interactive) (kill-buffer "*interpretation*")))
+
+(global-set-key (kbd "s-f") 'ido-find-file)
+(global-set-key (kbd "s-F") 'ido-find-file-other-window)
+(global-set-key (kbd "s-b") 'ido-switch-buffer)
+(global-set-key (kbd "s-B") 'ido-switch-buffer-other-window)
+(global-set-key (kbd "s-e") 'previous-buffer)
+(global-set-key (kbd "s-i") 'next-buffer)
+(global-set-key (kbd "s-t") 'other-window)
+(global-set-key (kbd "s-o") 'delete-other-windows)
+(global-set-key (kbd "s-d") 'delete-window)
+(global-set-key (kbd "s-p") 'backward-paragraph)
+(global-set-key (kbd "s-n") 'forward-paragraph)
+(global-set-key (kbd "s-k") 'kill-this-buffer)
+(global-set-key (kbd "s-s") (lambda () (interactive) (save-some-buffers t)))
+(global-set-key (kbd "s-\\") 'indent-region)
+(global-set-key (kbd "s-8") 'scroll-other-window-down)
+(global-set-key (kbd "s-9") 'scroll-other-window)
+
+(global-set-key (kbd "C-,") 'beginning-of-buffer)
+(global-set-key (kbd "C-.") 'end-of-buffer)
+(global-set-key (kbd "C-6") 'delete-indentation)
+
+(global-set-key (kbd "C-7") (lambda () (interactive) (insert "ä")))
+(global-set-key (kbd "C-8") (lambda () (interactive) (insert "ö")))
+(global-set-key (kbd "C-9") (lambda () (interactive) (insert "Ä")))
+(global-set-key (kbd "C-0") (lambda () (interactive) (insert "Ö")))
+
+(setenv "LANG" "en_US.UTF-8")
+
+(setenv "MANWIDTH" "80")
+
+; Save buffers when changing to another application. `focus-out-hook`
+; was added in Emacs 24.4. Setting `inhibit-message` to `t` disables
+; the message about what files are saved, which would otherwise even
+; be shown over the minibuffer when the minibuffer is active.
+; `inhibit-message` was added in Emacs 25.
+(add-hook 'focus-out-hook (lambda () (let ((inhibit-message t)) (save-some-buffers t))))
+
+(defadvice switch-to-buffer (before save-buffer-now activate)
+  (when buffer-file-name (let ((inhibit-message t)) (save-some-buffers t))))
+
+(defadvice other-window (before other-window-now activate)
+  (when buffer-file-name (let ((inhibit-message t)) (save-some-buffers t))))
+
+; Automatically revert a buffer when its file changes on disk.
+(global-auto-revert-mode 1)
+
+; Open Emacs in full screen by default.
+(setq initial-frame-alist '((fullscreen . fullboth)))
+
+; Make `shell-command` and `shell-command-on-region` use a newer
+; version of Bash and make them invoke Bash as a login shell so that
+; it reads `~/.bash_profile`.
+(setq shell-file-name "/usr/local/bin/bash")
+(setq shell-command-switch "-lc")
+
+; Wrap text at word boundaries. `(visual-line-mode t)` also does that,
+; but it makes commands like `C-a`, `C-e`, and `C-k` apply to screen
+; lines instead of logical lines.
+(setq-default word-wrap t)
+
+; Cycle through previously edited points in the current buffer.
+(require 'goto-chg)
+(global-set-key (kbd "s-.") 'goto-last-change)
+(global-set-key (kbd "s-,") 'goto-last-change-reverse)
+
+; Jump to a character visible in the current buffer with few
+; keystrokes.
+(require 'ace-jump-mode)
+(global-set-key (kbd "s-j") 'ace-jump-char-mode)
+
+; Make `C-up` add a cursor above and `C-down` add a cursor below.
+(require 'multiple-cursors)
+(global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
+(global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
+
+; `expand-region` increases the region by semantic units,
+; `change-inner` kills text within paired characters excluding the
+; paired characters, and `change-outer` kills text within paired
+; characters including the paired characters.
+(require 'expand-region)
+(require 'change-inner)
+(require 'smart-forward)
+(global-set-key (kbd "C-1") 'er/expand-region)
+(global-set-key (kbd "H-i") 'change-inner)
+(global-set-key (kbd "H-o") 'change-outer)
+
+(setq ns-command-modifier 'super)
+(setq ns-right-control-modifier 'hyper)
+
+; Use a custom implementation for full screen in OS X so that there is
+; no animation when switching between Emacs and another application.
+(setq-default ns-use-native-fullscreen nil)
+
+; Disable the audible bell. If in OS X the alert volume is set to
+; zero, the audible bell is not played, but it causes the sound output
+; to be activated in a way that a quiet hiss is produced for some
+; period of time.
+(setq ring-bell-function 'ignore)
+
+; Use a Japanese instead of a Chinese font to display Japanese and
+; Chinese characters in OS X.
+(set-fontset-font "fontset-default" 'japanese-jisx0208 '("Hiragino Kaku Gothic ProN" . "iso10646-1"))
+
+; Copy text to the clipboard in a text terminal in OS X.
+(defun pbcopy ()
+  (interactive)
+  (let ((deactivate-mark t))
+    (call-process-region (point) (mark) "pbcopy")))
+
+(defun pbpaste ()
+  (interactive)
+  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun pbcut ()
+  (interactive)
+  (pbcopy)
+  (kill-region (region-beginning) (region-end)))
+```
