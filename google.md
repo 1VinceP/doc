@@ -28,8 +28,9 @@ be the most useful.
   unit and currency conversions, etc.
 * Exact match: `""`
   * `"google advanced search operators"`
-* Filetype: `filetype:foo`
+* Filetype: `filetype:`, `ext:`
   * `haskell filetype:pdf`
+  * `inurl:edu ext:pdf -intitle:theory haskell`
 * Common words: `+`
   * Google removes common words (like `and`) from searches.
     `+and` would force inclusion of that word.
