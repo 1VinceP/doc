@@ -6,12 +6,7 @@ This process is moderately time-consuming. Expect to spend an hour or so the fir
 After that, you can always take backups and/or snapshots. I believe backups are $1 a month from DO.
 Many of these steps can apply to other VPS services (Amazon Lightsail, etc.).
 
-* I have three scripts that may be helpful:
-  * [this one is incomplete](https://github.com/zacanger/z/blob/master/bin/sh/do-new.sh) but it contains
-    (afaict) every command you would be running on your server if you go through this whole doc.
-  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update.sh) will update your box
-  * [this one](https://github.com/zacanger/z/blob/master/bin/sh/do-update-forever-nginx.sh) will update your box and restart forever and NGINX
-* If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
+If you need https, [read this](https://www.digitalocean.com/community/tutorials/how-to-install-an-ssl-certificate-from-a-commercial-certificate-authority)
 
 --------
 
